@@ -1,0 +1,55 @@
+.servicesSection {
+  background: #d4cb8252;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.title {
+  font-size: 36px;
+  color: #262626;
+  margin-bottom: 40px;
+}
+
+.serviceBlocks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.serviceCard {
+  background: #d4cb8252;
+  padding: 32px;
+
+  width: 320px;
+
+  h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #262626;
+  }
+
+  button {
+    background: #262626;
+    color: white;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 32px;
+    font-size: 16px;
+    cursor: pointer;
+
+    &:hover {
+      background: #e9672b33;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .serviceCard {
+    width: 100%;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+}
