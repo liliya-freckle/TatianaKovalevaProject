@@ -1,0 +1,16 @@
+.button {
+  width: 220px;
+  height: 60px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  background-color: #753E0D;
+  color: #FFFFFF;
+  font-family: "Playfair Display", sans-serif;
+  font-size: 24px;
+}
+.button:hover {
+  background-color: rgba(233, 103, 43, 0.2);
+  color: #753E0D;
+}/*# sourceMappingURL=Button.module.css.map */

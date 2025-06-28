@@ -1,0 +1,13 @@
+
+@mixin button {
+    width: 220px;
+    height: 60px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: $border-radius;
+    cursor: pointer;
+    background-color: $button-background-color;
+    color: $button-text;
+    font-family: $primary-font;
+    font-size: $primary-font-size;
+}
