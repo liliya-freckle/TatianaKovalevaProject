@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styles from "./Services.module.scss";
-//import ServiceModal from "./ServiceModal";
+import ServiceModal from "./ServiceModal";
+import Button from "../Button/Button";
 
 const Services = () => {
   const [activeModal, setActiveModal] = useState(null);
@@ -11,11 +12,13 @@ const Services = () => {
       <div className={styles.serviceBlocks}>
         <div className={styles.serviceCard}>
           <h3>Разовые задачи</h3>
-          <button onClick={() => setActiveModal("single")}>Подробнее</button>
+          <p>Для тех, кому нужно решить несколько конкретных задач</p>
+          <Button onClick={() => setActiveModal("single")}>Подробнее</Button>
         </div>
         <div className={styles.serviceCard}>
           <h3>Автоматизация</h3>
-          <button onClick={() => setActiveModal("auto")}>Подробнее</button>
+          <p>Автоматизация любых процессов в проектах под запрос заказчика</p>
+          <Button onClick={() => setActiveModal("auto")}>Подробнее</Button>
         </div>
       </div>
       {activeModal && (
