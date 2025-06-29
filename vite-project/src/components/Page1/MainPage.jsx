@@ -6,7 +6,7 @@ const MainPage = () => {
   return (
     <>
       <div>Main Page</div>
-      <Button text="Связаться"></Button>
+      <Button>Связаться</Button>
       <Services />
     </>
   );
