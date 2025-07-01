@@ -2,7 +2,9 @@ import React from 'react'
 
 const Cases = () => {
   return (
-    <div>Cases</div>
+    <div id="cases">
+        Cases
+    </div>
   )
 }
 
