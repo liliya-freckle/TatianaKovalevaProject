@@ -1,13 +1,23 @@
 import React from "react";
 import Button from "../Button/Button";
 import Services from "../Page 3/Services";
+import NavigationBar from "./NavigationBar";
+import AboutMe from "../Page2/AboutMe";
+import Cases from "../Page4/Cases";
+import JobStages from "../Page5/JobStages";
+import Contacts from "../Page6/Contacts";
 
 const MainPage = () => {
   return (
     <>
-      <div>Main Page</div>
+      <NavigationBar />
+      <div>Обо мне</div>
       <Button>Связаться</Button>
-      <Services />
+      <AboutMe id="aboutme" />
+      <Services id="services" />
+      <Cases id="cases" />
+      <JobStages id="jobstages" />
+      <Contacts id="contacts" />
     </>
   );
 };
