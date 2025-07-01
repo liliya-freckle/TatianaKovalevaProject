@@ -1,13 +1,14 @@
 import React from "react";
 import Button from "../Button/Button";
 import Services from "../Page 3/Services";
+import NavigationBar from "./NavigationBar";
 
 const MainPage = () => {
   return (
     <>
-      <div>Main Page</div>
-      <Button text="Связаться"></Button>
-      <Services />
+      <NavigationBar/>
+      <div>Обо мне</div>
+      <Button>Связаться</Button>
     </>
   );
 };
