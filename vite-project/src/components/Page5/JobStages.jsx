@@ -5,6 +5,7 @@ const JobStages = () => {
     <div id="jobstages">
         JobStages
     </div>
+
   )
 }
 

@@ -5,6 +5,7 @@ const Contacts = () => {
     <div id="contacts">
         Contacts
     </div>
+
   )
 }
 

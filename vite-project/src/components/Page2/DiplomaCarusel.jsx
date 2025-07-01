@@ -1,4 +1,5 @@
 
+
 import React, { useState } from 'react';
 
 const DiplomaCarusel = ({images}) => {
@@ -29,4 +30,3 @@ const DiplomaCarusel = ({images}) => {
 }
 
 export default DiplomaCarusel
-
