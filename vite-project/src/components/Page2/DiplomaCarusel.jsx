@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 
 const DiplomaCarusel = ({images}) => {
 
+
   const [currentIndex, setCurrentIndex] = useState(0);
   const prevSlide =() => {
     setCurrentIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
