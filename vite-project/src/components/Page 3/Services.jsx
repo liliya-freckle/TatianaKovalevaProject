@@ -13,20 +13,21 @@ const Services = () => {
       <h2 className={styles.title}>Услуги</h2>
       <div className={styles.serviceBlocks}>
         <div className={styles.serviceCard}>
-          <img
-            src={SingleImg}
-            alt="Разовые задачи"
-            className={styles.cardImage}
-          />
-          <h3>Разовые задачи</h3>
-          <p>Для тех, кому нужно решить несколько конкретных задач</p>
-          <Button onClick={() => setActiveModal("single")}>Подробнее</Button>
+          <img src={SingleImg} alt="Разовые задачи" />
+          <div className={styles.content}>
+            <h3>Разовые задачи</h3>
+            <p>Для тех, кому нужно решить несколько конкретных задач</p>
+            <Button onClick={() => setActiveModal("single")}>Подробнее</Button>
+          </div>
         </div>
-        <div className={styles.serviceCard}>
-          <img src={AutoImg} alt="Автоматизация" className={styles.cardImage} />
-          <h3>Автоматизация</h3>
-          <p>Автоматизация любых процессов в проектах под запрос заказчика</p>
-          <Button onClick={() => setActiveModal("auto")}>Подробнее</Button>
+
+        <div className={`${styles.serviceCard} ${styles.reverseMobile}`}>
+          <div className={styles.content}>
+            <h3>Автоматизация</h3>
+            <p>Автоматизация любых процессов в проектах под запрос заказчика</p>
+            <Button onClick={() => setActiveModal("auto")}>Подробнее</Button>
+          </div>
+          <img src={AutoImg} alt="Автоматизация" />
         </div>
       </div>
       {activeModal && (

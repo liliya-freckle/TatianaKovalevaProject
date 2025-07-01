@@ -1,5 +1,4 @@
 .servicesSection {
-  // background: #d4cb8252;
   padding: 80px 20px;
   text-align: center;
 }
@@ -17,21 +16,36 @@
 
 .serviceBlocks {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
   gap: 40px;
   padding: 0 20px;
 }
 
 .serviceCard {
+  width: 100%;
+  max-width: 960px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 32px;
-  width: 320px;
 
   img {
-    width: 100%;
+    width: 320px;
     height: auto;
-    border-radius: 16px;
+    border: 2px #753e0d solid;
+    border-radius: 3px;
     margin-bottom: 20px;
+    box-shadow: 6px 6px 0px 0px rgba(117, 62, 13, 0.25);
+    object-fit: cover;
+  }
+
+  .content {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 
   h3 {
@@ -54,9 +68,20 @@
 @media (max-width: 768px) {
   .serviceCard {
     width: 100%;
+    flex-direction: column;
+  }
+
+  .reverseMobile {
+    flex-direction: column-reverse;
   }
 
   .title {
     font-size: 28px;
+  }
+
+  .content {
+    width: 100%;
+    align-items: center;
+    text-align: center;
   }
 }

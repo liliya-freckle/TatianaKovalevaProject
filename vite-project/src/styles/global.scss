@@ -1,19 +1,13 @@
-
-@import './variables';
-@import './mixins';
-
+@import "./variables";
+@import "./mixins";
 
 body {
-  font-family: 'Playfair Display', sans-serif;
+  font-family: "Playfair Display", sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #D4CB8232;
+  background-color: #d4cb8232;
 }
 
 html {
   scroll-behavior: smooth;
 }
-
-  
-}
-

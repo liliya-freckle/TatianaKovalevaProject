@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styles from "./ServiceModal.module.scss";
-//import SubModal from "./SubModal";
+import SubModal from "./SubModal";
 
 const scrollToContacts = () => {
   document.getElementById("contacts")?.scrollIntoView({ behavior: "smooth" });
