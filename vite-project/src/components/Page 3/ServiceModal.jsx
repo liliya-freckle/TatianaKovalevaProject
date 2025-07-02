@@ -1,6 +1,8 @@
 import React, { useState } from "react";
-import styles from "./ServiceModal.module.scss";
+import Button from "../Button/Button";
 import SubModal from "./SubModal";
+import CloseButton from "../CloseButton/CloseButton";
+import styles from "./ServiceModal.module.scss";
 
 const scrollToContacts = () => {
   document.getElementById("contacts")?.scrollIntoView({ behavior: "smooth" });
@@ -24,12 +26,12 @@ const ServiceModal = ({ type, onClose }) => {
     <>
       <div className={styles.overlay}>
         <div className={styles.modal}>
-          <button className={styles.closeBtn} onClick={onClose}>
-            ✕
-          </button>
+          <CloseButton onClick={onClose} />
           {isSingle ? (
             <>
-              <h2>Разовые задачи</h2>
+              <p>
+                Для тех, кому нужно решить несколько конкретных задач таких как:
+              </p>
               <ul className={styles.list}>
                 {tasks.map((task, i) => (
                   <li key={i}>
@@ -37,20 +39,31 @@ const ServiceModal = ({ type, onClose }) => {
                   </li>
                 ))}
               </ul>
-              <button className={styles.actionBtn} onClick={scrollToContacts}>
-                Рассчитать стоимость
-              </button>
+              <p className={styles.price}>
+                Стоимость рассчитывается индивидуально
+              </p>
+              <Button onClick={scrollToContacts}>Рассчитать стоимость</Button>
             </>
           ) : (
             <>
-              <h2>Автоматизация</h2>
-              <p>
-                Подключение автоматических процессов для онлайн-обучения и
-                продаж.
+              <p className={styles.auto}>
+                Автоматизация любых процессов в проектах под запрос заказчика
+                <br />
+                для упрощения и ускорения работы сотрудников.
               </p>
-              <button className={styles.actionBtn} onClick={scrollToContacts}>
-                Связаться
-              </button>
+              <p className={styles.auto}>
+                – создание авторассылок и автозвонков;
+                <br />
+                – создание чат-ботов;
+                <br />
+                – автоматическая постановка задач менеджерам;
+                <br />– процессы любой сложности.
+              </p>
+
+              <p className={styles.price}>
+                Стоимость рассчитывается индивидуально
+              </p>
+              <Button onClick={scrollToContacts}>Связаться</Button>
             </>
           )}
         </div>
