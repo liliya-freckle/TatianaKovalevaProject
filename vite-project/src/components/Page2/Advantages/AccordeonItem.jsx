@@ -18,7 +18,6 @@ return (
         {title}
         <img
           src={isOpen ? imageUp : imageDown}
-          width="15px"
           className={styles.img}
           alt="arrow"
         />

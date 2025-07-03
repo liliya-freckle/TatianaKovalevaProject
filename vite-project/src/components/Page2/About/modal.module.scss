@@ -1,0 +1,64 @@
+.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    // inset: 0; /* Альтернативный способ задания всех сторон 0 сразу */
+}
+
+.overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1a1a1a94;
+    width: 100%;
+    height: 100%;
+}
+
+.modal_content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: hwb(55 89% 2%);
+  min-width: 323px;
+  max-width: 500px;
+  min-height: 626px;
+  width: 30%; /* ширина модального окна 30% от ширины родителя (экрана) */
+  height: 70%; /* высота модального окна 70% от высоты родителя (экрана) */
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.modal_closeButton {
+  position: absolute;
+  top: 25px;
+  right: 29px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.modal_closeButton img {
+  width: 32px;
+  height: 32px;
+}
+
+.modal_contentText {
+  display: flex;
+  flex-direction: column;
+  padding: 57px 29px 31px 28px;
+  color: rgba(35, 29, 23, 1);
+  overflow: auto;
+}
+
+.modal_contentText p {
+  margin: 5px 0;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 25px;
+  text-align: left;
+}
+.modal_contentText :first-child {
+    margin-bottom: 25px;
+}

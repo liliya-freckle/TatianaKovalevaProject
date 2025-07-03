@@ -8,9 +8,11 @@ import Cases from './components/Page4/Cases';
 import JobStages from './components/Page5/JobStages';
 import Contacts from './components/Page6/Contacts';
 
+
 function App() {
-  
+
   return (
+
     <Router>
       <div className="App">
         <Routes>
@@ -23,6 +25,8 @@ function App() {
         </Routes>
       </div>
     </Router>
+
+
   )
 }
 
