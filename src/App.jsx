@@ -2,7 +2,7 @@ import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import MainPage from './components/Page1/MainPage';
 import './styles/global.scss';
-import Services from './components/Page 3/Services';
+import Services from './components/Page3/Services';
 import AboutMe from './components/Page2/AboutMe';
 import Cases from './components/Page4/Cases';
 import JobStages from './components/Page5/JobStages';
