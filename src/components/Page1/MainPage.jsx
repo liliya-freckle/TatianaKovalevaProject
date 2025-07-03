@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "../Button/Button";
-import Services from "../Page 3/Services";
+import Services from "../Page3/Services";
 import NavigationBar from "./NavigationBar";
 import AboutMe from "../Page2/AboutMe";
 import Cases from "../Page4/Cases";
