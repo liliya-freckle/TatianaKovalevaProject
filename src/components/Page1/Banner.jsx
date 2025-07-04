@@ -60,7 +60,6 @@ const Banner = () => {
           alt='Татьяна Ковалева'
         />
       </div>
-      <Carousel />
     </div>
   )
 }
