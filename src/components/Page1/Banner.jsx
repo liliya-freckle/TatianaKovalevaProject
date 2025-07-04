@@ -2,6 +2,7 @@ import Button from '../Button/Button'
 import NavigationBar from './NavigationBar'
 import styles from './Banner.module.scss'
 import { useState } from 'react'
+import Carousel from '../Carousel/Carousel'
 
 const Banner = () => {
   const [isPopupVisible, setIsPopupVisible] = useState(false)
@@ -59,6 +60,7 @@ const Banner = () => {
           alt='Татьяна Ковалева'
         />
       </div>
+      <Carousel />
     </div>
   )
 }

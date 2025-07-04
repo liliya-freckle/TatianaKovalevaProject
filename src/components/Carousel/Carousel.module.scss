@@ -1,0 +1,37 @@
+.carousel{
+  position: relative;
+	margin: 3rem 0;
+  button {
+		background-color: transparent;
+    position: absolute;
+    top: 40%;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+
+    img {
+      width: 63px;
+      height: 63px;
+    }
+  }
+}
+.container{
+	max-width: 1100px;
+	margin: 0 auto;
+}
+.custom_prev {
+    left: -40px;
+  }
+
+.custom_next {
+	right: -40px;
+	transform: rotate(180deg);
+}
+.carousel_img {
+	width: 100%;
+	object-fit:fill;
+	height: 250px;
+	border: 2px solid #753E0D;
+	box-shadow: 0 8px 4px #753E0D40;
+}
