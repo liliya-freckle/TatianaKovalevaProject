@@ -1,6 +1,7 @@
 
 
 import React, { useState } from 'react';
+import styles from './DiplomaCarusel.module.scss'
 
 const DiplomaCarusel = ({images}) => {
 
