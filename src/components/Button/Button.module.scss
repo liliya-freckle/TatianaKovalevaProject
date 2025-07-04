@@ -1,0 +1,14 @@
+
+
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.button {
+
+  @include button;
+
+  &:hover {
+    background-color: $button-hover;
+    color: $button-hover-text;
+  }
+}
