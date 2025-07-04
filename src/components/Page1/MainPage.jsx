@@ -11,7 +11,7 @@ const MainPage = () => {
       <Banner />
       <AboutMe />
       <Services id='services' />
-      <Cases id='cases' />
+      <Cases />
       <JobStages id='jobstages' />
       <Contacts id='contacts' />
     </>
