@@ -9,13 +9,10 @@
   vertical-align: middle;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-// .container {
-// background-color: rgb(200, 159, 239);
-// max-width: 1280px;
-// }
-// .accordionItem {
-// width: 100%;
-// }
+.container {
+max-width: 1280px;
+padding: 0 20px;
+}
 .accordionTitle {
   display: flex;
   justify-content: space-between;

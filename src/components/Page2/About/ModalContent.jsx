@@ -1,13 +1,12 @@
 import React from 'react'
 import styles from './modal.module.scss';
-import closeIcon from '/icons/close.png';
+// import closeIcon from '/icons/close.png';
+import CloseButton from '../../CloseButton/CloseButton';
 
 export default function ModalContent( {setIsOpen}) {
   return (
     <div className={styles.modal_content}> 
-      <button className={styles.modal_closeButton} onClick={() =>  setIsOpen(false)}>
-        <img src={closeIcon} alt='Крестик'/>
-      </button>
+    <CloseButton onClick={() => setIsOpen(false)} />
     
       <div className={styles.modal_contentText}>
         <p>Из основных:</p>
