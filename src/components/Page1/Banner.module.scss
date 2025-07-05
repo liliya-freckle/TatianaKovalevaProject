@@ -1,0 +1,97 @@
+@use './../../styles/variables.scss' as *;
+@import 'https://fonts.googleapis.com/css2?family=Inter&display=swap';
+.banner{
+	margin-bottom: 6rem;
+}
+.container{
+	display: flex;
+	justify-content: space-around;
+	margin-top: 1rem;
+	@media (max-width: 1024px) {
+		flex-direction: column;
+		align-items: center;
+	}
+}
+h1{
+	font-size: 96px;
+	text-align: center;
+	margin: 0;
+	line-height: 76px;
+	color: $title-color;
+	font-weight: 400;
+	position: relative;
+	@media (max-width: 1024px) {
+		font-size: 64px;
+		line-height: 56px;
+	}
+}
+.text_block{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	padding: 1rem;
+	@media (max-width: 1024px) {
+		gap: 2rem;
+		margin-bottom: 2rem;
+	}
+	p{
+		font-family: 'Inter', sans-serif;
+		font-size: 26px;
+		text-align: center;
+		line-height: 1;
+		color: $text-color;
+		font-weight: 600;
+	}
+
+}
+.main_img{
+	max-width: 456px;
+	@media (max-width: 1024px) {
+		width: 100%;
+	}
+}
+.small_img{
+	width: 22px;
+	position: absolute;
+	top: 40%;
+	right: -20px;
+	cursor: pointer;
+}
+.hidden_text{
+	display: flex;
+	flex-direction: column;
+	align-items: end;
+	position: absolute;
+	top: 300px;
+	background-color: #F2EED7;
+	width: 320px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	padding: 1rem 1.5rem;
+	animation: fadeIn 1s ease forwards;
+	@media (max-width: 1024px) {
+		top: 80px;
+	}
+	p{
+		text-align: start;
+		font-size: 20px;
+		font-family: $primary-font;
+		font-weight: 400;
+		line-height: 1.4;
+	}
+}
+.close_img{
+	width: 32px;
+	cursor: pointer;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

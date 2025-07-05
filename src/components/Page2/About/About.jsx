@@ -4,7 +4,7 @@ import AboutItem from './AboutItem';
 
 export default function About () {
     return (
-        <div>
+        <div id='aboutme'>
             <h2 className={styles.title}>Обо мне</h2>
             <div className={styles.statistics}>
                 
