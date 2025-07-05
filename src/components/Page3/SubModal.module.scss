@@ -19,9 +19,26 @@
   overflow-y: auto;
 }
 
-p {
-  font-size: 16px;
+.list {
+  list-style: none;
+  padding-left: 0;
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: left;
   color: #231d17;
+
+  li {
+    position: relative;
+    padding-left: 18px;
+    margin-bottom: 12px;
+
+    &::before {
+      content: "–";
+      position: absolute;
+      left: 0;
+      color: #753e0d;
+    }
+  }
 }
 
 @media (max-width: 480px) {

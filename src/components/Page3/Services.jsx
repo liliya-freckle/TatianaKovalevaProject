@@ -13,7 +13,18 @@ const Services = () => {
       <h2 className={styles.title}>Услуги</h2>
       <div className={styles.serviceBlocks}>
         <div className={styles.serviceCard}>
-          <img src={SingleImg} alt="Разовые задачи" />
+          <img src={AutoImg} alt="Автоматизация" />
+          <div className={styles.content}>
+            <h3> Автоматизация </h3>
+            <p>
+              Автоматизация любых процессов <br /> в проектах под запрос
+              заказчика
+            </p>
+            <Button onClick={() => setActiveModal("auto")}>Подробнее</Button>
+          </div>
+        </div>
+
+        <div className={`${styles.serviceCard} ${styles.reverseMobile}`}>
           <div className={styles.content}>
             <h3>Разовые задачи</h3>
             <p>
@@ -21,18 +32,7 @@ const Services = () => {
             </p>
             <Button onClick={() => setActiveModal("single")}>Подробнее</Button>
           </div>
-        </div>
-
-        <div className={`${styles.serviceCard} ${styles.reverseMobile}`}>
-          <div className={styles.content}>
-            <h3>Автоматизация</h3>
-            <p>
-              Автоматизация любых процессов <br /> в проектах под запрос
-              заказчика
-            </p>
-            <Button onClick={() => setActiveModal("auto")}>Подробнее</Button>
-          </div>
-          <img src={AutoImg} alt="Автоматизация" />
+          <img src={SingleImg} alt="Разовые задачи" />
         </div>
       </div>
       {activeModal && (
