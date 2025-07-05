@@ -17,12 +17,13 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
- gap: 30px;
+ gap: 40px;
  font-family: $secondary-font;
 //  font-family: 'Playfair', sans-serif;
 }
 
 .stageItem {
+  flex: 1 1 300px;
   text-align: center;
   max-width: 340px;
 }
