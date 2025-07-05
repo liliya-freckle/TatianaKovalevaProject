@@ -16,23 +16,36 @@
 
 .serviceBlocks {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   gap: 40px;
   padding: 0 20px;
+
+  flex-wrap: wrap;
+}
+
+.reverseMobile img {
+  margin-top: 60px;
 }
 
 .serviceCard {
-  width: 100%;
+  /*width: 100%;
   max-width: 1024px;
-  display: flex;
   justify-content: space-between;
+  */
+
+  flex: 1 1 calc(50% - 40px);
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  text-align: center;
   padding: 32px;
   margin: 0 auto;
+  box-sizing: border-box;
 
   img {
-    width: 490px;
+    width: 100%;
+    max-width: 490px;
     height: auto;
     border: 2px #753e0d solid;
     border-radius: 3px;
@@ -54,7 +67,7 @@
     color: #262626;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-weight: 900;
-    font-size: 20px;
+    font-size: 32px;
     line-height: 54px;
     text-align: center;
   }
@@ -68,12 +81,14 @@
 
 @media (max-width: 768px) {
   .serviceCard {
-    width: 100%;
-    flex-direction: column;
+    flex: 1 1 100%;
   }
 
   .reverseMobile {
     flex-direction: column-reverse;
+    img {
+      margin-top: 20px;
+    }
   }
 
   .title {
