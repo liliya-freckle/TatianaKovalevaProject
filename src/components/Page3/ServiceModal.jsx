@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Button from "../Button/Button";
 import SubModal from "./SubModal";
 import CloseButton from "../CloseButton/CloseButton";
@@ -11,6 +11,24 @@ const scrollToContacts = () => {
 const ServiceModal = ({ type, onClose }) => {
   const [subModal, setSubModal] = useState(null);
   const isSingle = type === "single";
+  const modalRef = useRef();
+
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.key === "Escape") {
+        onClose();
+      }
+    };
+
+    document.addEventListener("keydown", handleKeyDown);
+    return () => document.removeEventListener("keydown", handleKeyDown);
+  }, [onClose]);
+
+  const handleOverlayClick = (e) => {
+    if (e.target === e.currentTarget) {
+      onClose();
+    }
+  };
 
   const tasks = [
     "Базовая настройка аккаунта на GetCourse",
@@ -24,8 +42,8 @@ const ServiceModal = ({ type, onClose }) => {
 
   return (
     <>
-      <div className={styles.overlay}>
-        <div className={styles.modal}>
+      <div className={styles.overlay} onClick={handleOverlayClick}>
+        <div className={styles.modal} ref={modalRef}>
           <CloseButton onClick={onClose} />
           {isSingle ? (
             <>
