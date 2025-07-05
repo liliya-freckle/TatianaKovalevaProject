@@ -6,10 +6,10 @@ import DiplomaCarousel from './Carousel/DiplomaCarousel'
 const AboutMe = () => {
 
   return (
-    <>
+    <div id="aboutme">
     <About />
     <Advantages />
-    </>
+    </div>
   )
 }
 

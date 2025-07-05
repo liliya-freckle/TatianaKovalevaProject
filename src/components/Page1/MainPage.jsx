@@ -9,7 +9,7 @@ const MainPage = () => {
   return (
     <>
       <Banner />
-      <AboutMe />
+      <AboutMe id='aboutme' />
       <Services id='services' />
       <Cases />
       <JobStages id='jobstages' />

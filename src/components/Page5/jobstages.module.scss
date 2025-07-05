@@ -1,8 +1,8 @@
-@import "../../../styles/variables.scss";
+@import "../../styles/variables";
 
 .title {
   margin-top: 50px;
-  // color: #5e3109;
+//   color: #5e3109;
   color: $title-color;
   margin-bottom: 40px;
   font-weight: 400;
@@ -13,7 +13,7 @@
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.statistics {
+.stages {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -22,12 +22,12 @@
 //  font-family: 'Playfair', sans-serif;
 }
 
-.statisticItem {
+.stageItem {
   text-align: center;
-  max-width: 260px;
+  max-width: 340px;
 }
 
-  .statisticNumber {
+  .stageNumber {
     font-size: 96px;
     line-height: 110px;
     font-weight: 900;
@@ -35,7 +35,7 @@
     // color: rgba(35, 29, 23, 0.81);
   }
 
-  .statisticDescription {
+  .stageDescription {
     font-size: 24px;
     font-weight: 900;
     line-height: 25px;
@@ -44,12 +44,3 @@
     text-shadow: rgba(0, 0, 0, 0.25) 0px 4px 4px;
   }
 
-  .statisticSubtext {
-    font-family: $primary-font;
-    font-size: 15px;
-    font-weight: 700;
-    line-height: 76px;
-    // color: rgba(35, 29, 23, 0.5);
-    color: $subtext-color;
-    cursor: pointer;
-     }
