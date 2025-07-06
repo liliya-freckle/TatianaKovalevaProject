@@ -10,7 +10,7 @@
 }
 
 .overlay {
-    display: flex;
+        display: flex;
     align-items: center;
     justify-content: center;
     background-color: #1a1a1a94;
@@ -29,22 +29,6 @@
   width: 30%; /* ширина модального окна 30% от ширины родителя (экрана) */
   height: 70%; /* высота модального окна 70% от высоты родителя (экрана) */
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-}
-
-.modal_closeButton {
-    padding: 0;
-  position: absolute;
-  top: 25px;
-  right: 29px;
-  border: none;
-  background: transparent;
-  cursor: pointer;
-}
-
-.modal_closeButton img {
-  width: 32px;
-  height: 32px;
-
 }
 
 .modal_contentText {
