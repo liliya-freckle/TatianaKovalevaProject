@@ -4,19 +4,17 @@ import JobStagesItem from './JobStagesItem';
 
 const JobStages = () => {
   return (
-    <div id="jobstages">
+    <section id="jobstages"className={styles.jobstagesSection}>
         <h2 className={styles.title}>Этапы работы</h2>
         <div className={styles.stages}> 
-                <JobStagesItem number="1" word="этап" description="Вы оставляете заявку" /> 
-                <JobStagesItem number="2" word="этап" description="Мы созваниваемся или связываемся другим удобным для Вас способом для консультации" />
-                <JobStagesItem number="3" word="этап" description="Я составляю для Вас поэтапный план действий и расчет стоимости услуг" />
-                <JobStagesItem number="4" word="этап" description="Вы утверждаете расчет и вносите предоплату 50% от полной стоимости" /> 
-                <JobStagesItem number="5" word="этап" description="После завершения работы вы вносите остаток оплаты, и я передаю Вам все доступы и материалы" /> 
-                <JobStagesItem number="6" word="этап" description="Я приступаю к работе в течение 1-5 дней после предоставления Вами всех необходимых материалов" /> 
-            </div>
-                    
-
-    </div>
+          <JobStagesItem number="1" word="этап" description="Вы оставляете заявку" /> 
+          <JobStagesItem number="2" word="этап" description="Мы созваниваемся или связываемся другим удобным для Вас способом для консультации" />
+          <JobStagesItem number="3" word="этап" description="Я составляю для Вас поэтапный план действий и расчет стоимости услуг" />
+          <JobStagesItem number="4" word="этап" description="Вы утверждаете расчет и вносите предоплату 50% от полной стоимости" /> 
+          <JobStagesItem number="5" word="этап" description="После завершения работы вы вносите остаток оплаты, и я передаю Вам все доступы и материалы" /> 
+          <JobStagesItem number="6" word="этап" description="Я приступаю к работе в течение 1-5 дней после предоставления Вами всех необходимых материалов" /> 
+        </div>
+    </section>
 
   )
 }

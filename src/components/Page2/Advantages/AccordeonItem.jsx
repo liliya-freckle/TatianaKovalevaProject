@@ -11,11 +11,11 @@ export default function AccordionItem({ title, content }) {
 
 return (
     <div className={styles.accordionItem}>
-              <div
-        className={`${styles.accordionTitle} ${isOpen ? styles.active : ""}`}
-        onClick={handleIsOpen}
-      >
-        {title}
+        <div
+          className={`${styles.accordionTitle} ${isOpen ? styles.active : ""}`}
+          onClick={handleIsOpen}
+        >
+          {title}
         <img
           src={isOpen ? imageUp : imageDown}
           width="15px"

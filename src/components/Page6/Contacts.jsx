@@ -6,7 +6,7 @@ import iconVK from "/icons/icon-VK.png"
 
 const Contacts = () => {
   return (
-    <div id="contacts">
+    <section id="contacts" className={styles.contactsSection}>
         <h2 className={styles.title}>Контакты</h2>
         <div className={styles.contactsContainer}>
           <p>Вы можете связаться со мной любым удобным для Вас способом</p>
@@ -26,7 +26,7 @@ const Contacts = () => {
         </div>
         </div>
         
-    </div>
+    </section>
 
   )
 }

@@ -10,7 +10,7 @@ export default function About () {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <div>
+        <section className={styles.aboutSection}>
             <h2 className={styles.title}>Обо мне</h2>
             <div className={styles.statistics}> 
                 <AboutItem number="3+" description="года я работаю с GetCourse" /> 
@@ -25,6 +25,6 @@ export default function About () {
                     </Modal>
                 )}
             </div>
-        </div>
+        </section>
     );
 };
