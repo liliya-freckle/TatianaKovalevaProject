@@ -13,7 +13,7 @@ const Contacts = () => {
           <p>+7 913 157 89-33</p>
           <p>kovaleva070215@gmail.com</p>
         <div className={styles.iconsContainer}>
-          <a href="https://wa.me/79131578933" target="_blank" rel="noopener noreferrer">
+          <a href="https://wa.me/79131578933?text=Здравствуйте! Я к Вам за консультацией технического специалиста." target="_blank" rel="noopener noreferrer">
                 <img src={iconWA} alt="WhatsApp" className={styles.icon} />
             </a>
             <a href="https://t.me/miss_Kovaleva_Tatiana" target="_blank" rel="noopener noreferrer">
