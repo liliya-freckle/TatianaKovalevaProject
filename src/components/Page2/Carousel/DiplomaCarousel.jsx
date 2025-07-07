@@ -5,11 +5,15 @@ import { Navigation, Pagination } from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
+import DiplomaImages from './DiplomaImages'
 
 
 
 
-const DiplomaCarousel = ({ images }) => {
+const DiplomaCarousel = () => {
+const src = DiplomaImages.startsWith('/')
+            ? DiplomaImages 
+            : `/diploma/${DiplomaImages}`
 
 
   return (
@@ -33,12 +37,9 @@ const DiplomaCarousel = ({ images }) => {
           }}
           pagination={{ clickable: true }}
 					>
-          {images.map((img, index) => (
+          {DiplomaImages.map((img, index) => (
             <>
-            const src = img.startsWith('/')
-            ? img 
-            : `/assets/diplomas/${img}`
-
+            
             <SwiperSlide key={index}>
               <img
                 src={src}
