@@ -1,5 +1,5 @@
 import styles from './Cases.module.scss'
-import Button from '../Button/Button'
+import Button from '../../Button/Button'
 
 const CasesBlock = ({ imgSrc, text, onButtonClick }) => {
   return (

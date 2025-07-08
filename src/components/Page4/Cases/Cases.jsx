@@ -1,6 +1,6 @@
 import styles from './Cases.module.scss'
 import CasesBlock from './CasesBlock'
-import Button from '../Button/Button'
+import Button from '../../Button/Button'
 import CasesPopup from './CasesPopap'
 import { useState } from 'react'
 
@@ -120,6 +120,7 @@ const Cases = () => {
         }>
         Посмотреть кейсы
       </Button>
+      
     </div>
   )
 }
