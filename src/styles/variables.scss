@@ -7,10 +7,11 @@ $button-hover: #e9672b33;
 $button-hover-text: #753e0d;
 
 $primary-font: 'Playfair Display', sans-serif;
-$primary-font-size: 24px;
 $secondary-font: 'Playfair', sans-serif;
 $header-font: 'Roboto', sans-serif;
 $paragraph-font: 'Inter', sans-serif;
+
+$primary-font-size: 24px;
 
 $bigtext-color: rgb(35, 29, 23, 0.81);
 $subtext-color: rgba(35, 29, 23, 0.5);
@@ -20,4 +21,6 @@ $modal-background-color: #F2EED7;
 $mobile: 480px;
 $tablet: 768px;
 $laptop: 1024px;
+$laptop-title: 38px;
+
 $desktop: 1280px;

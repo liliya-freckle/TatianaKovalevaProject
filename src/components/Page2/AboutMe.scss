@@ -1,0 +1,17 @@
+@use '../../styles/mixins' as*;
+@use '../../styles/variables.scss' as*;
+
+
+#aboutme {
+    @include laptop {
+        background-color: red;
+    }
+
+    @include tablet {
+        background-color: blueviolet;
+    }
+
+    @include mobile {
+        background-color: green;
+    }
+}

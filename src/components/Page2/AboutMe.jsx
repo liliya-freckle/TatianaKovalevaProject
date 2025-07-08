@@ -1,6 +1,7 @@
 import Advantages from './Advantages/Advantages'
 import About from './About/About'
 import Carousel from '../Carousel/Carousel'
+import './AboutMe.scss'
 
 const DiplomaImages = [
   '/diploma/diploma1.png',
