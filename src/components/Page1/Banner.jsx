@@ -2,6 +2,8 @@ import Button from '../Button/Button'
 import NavigationBar from './NavigationBar'
 import styles from './Banner.module.scss'
 import { useState } from 'react'
+import CloseButton from '../CloseButton/CloseButton'
+
 
 
 const Banner = () => {
@@ -17,7 +19,6 @@ const Banner = () => {
 
   return (
     <div className={styles.banner}>
-      <NavigationBar />
       <div className={styles.container}>
         <div className={styles.text_block}>
           <h1>
@@ -32,12 +33,7 @@ const Banner = () => {
           </h1>
           {isPopupVisible && (
             <div className={styles.hidden_text}>
-              <img
-                className={styles.close_img}
-                src='src/assets/images/close.png'
-                alt='close'
-                onClick={handleClose}
-              />
+              <CloseButton onClick={handleClose} />
               <p>
                 Сертифицированный технический специалист одной из крупных
                 платформ для обучения - GetCourse. Занимаюсь запусками и
