@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import styles from './Carousel.module.scss'
 import './Carousel.scss'
 import { Swiper, SwiperSlide } from 'swiper/react'
@@ -6,7 +7,8 @@ import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 
-const Carousel = ({ images }) => {
+const Carousel = ({ images , captions }) => {
+    const [activeIndex, setActiveIndex] = useState(0);
   return (
     <div className={styles.carousel}>
       <p
@@ -36,7 +38,8 @@ const Carousel = ({ images }) => {
             nextEl: '#next',
             prevEl: '#prev',
           }}
-          pagination={{ clickable: true }}>
+          pagination={{ clickable: true }}
+          onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}>
           {images.map((src, index) => (
             <SwiperSlide key={index}>
               <a
@@ -52,6 +55,11 @@ const Carousel = ({ images }) => {
             </SwiperSlide>
           ))}
         </Swiper>
+        {captions && captions.length > 0 && (
+          <div className={styles.caption}>
+            {captions[activeIndex]}
+          </div>
+        )}
       </div>
       <p
         id='next'

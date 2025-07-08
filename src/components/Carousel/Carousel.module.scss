@@ -65,3 +65,10 @@
   opacity: 1;
   transform: scale(1) !important;
 }
+.caption {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #753E0D;
+  min-height: 1.5em; /* чтобы высота была постоянная и не прыгала */
+}
