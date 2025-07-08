@@ -1,19 +1,14 @@
-import styles from './DiplomaCarousel.module.scss'
-import './DiplomaCarousel.scss'
+import styles from './Carousel.module.scss'
+import './Carousel.scss'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation, Pagination } from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
-import DiplomaImages from './DiplomaImages'
 
 
 
-
-const DiplomaCarousel = () => {
-const src = DiplomaImages.startsWith('/')
-            ? DiplomaImages 
-            : `/diploma/${DiplomaImages}`
+const Carousel = ({images}) => {
 
 
   return (
@@ -37,8 +32,7 @@ const src = DiplomaImages.startsWith('/')
           }}
           pagination={{ clickable: true }}
 					>
-          {DiplomaImages.map((img, index) => (
-            <>
+          {images.map((src, index) => (
             
             <SwiperSlide key={index}>
               <img
@@ -47,7 +41,6 @@ const src = DiplomaImages.startsWith('/')
                 className={styles.carousel_img}
               />
             </SwiperSlide>
-            </>
           )
   )}
         </Swiper>
@@ -64,4 +57,4 @@ const src = DiplomaImages.startsWith('/')
   )
 }
 
-export default DiplomaCarousel
+export default Carousel
