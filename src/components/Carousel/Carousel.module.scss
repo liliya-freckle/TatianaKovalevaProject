@@ -11,6 +11,12 @@
     cursor: pointer;
     z-index: 10;
     margin: 0;
+    @media (max-width: 1000px) {
+      left: 10%;
+    }
+    @media (max-width: 600px) {
+      display: none;
+    }
     img {
       width: 40px;
       height: 40px;
@@ -23,10 +29,17 @@
 }
 .custom_prev {
   transform: translate(calc(-100% - 200px), -22%);
+  @media (max-width: 1000px) {
+    transform: translate(0, -40%);
+  }
 }
 
 .custom_next {
   transform: translate(calc(200px), -40%) rotate(180deg);
+  @media (max-width: 1000px) {
+    transform: translate(0, -40%) rotate(180deg);
+    right: 10%;
+  }
 }
 .carousel_img {
   width: 100%;
@@ -34,6 +47,12 @@
   height: 280px;
   box-shadow: 0 8px 4px #753e0d40;
   cursor: pointer;
+  @media (max-width: 1000px) {
+    width: 50%;
+  }
+  @media (max-width: 600px) {
+    width: 80%;
+  }
 }
 
 :global(.swiper-slide) {

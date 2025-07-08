@@ -21,9 +21,17 @@ const Carousel = ({ images }) => {
         <Swiper
           modules={[Navigation, Pagination]}
           loop={true}
-          slidesPerView={3}
-          spaceBetween={60}
           centeredSlides={true}
+           breakpoints={{
+            0: {
+              slidesPerView: 1,
+              spaceBetween: 20,
+            },
+            1000: {
+              slidesPerView: 3,
+              spaceBetween: 60,
+            },
+          }}
           navigation={{
             nextEl: '#next',
             prevEl: '#prev',
