@@ -1,6 +1,4 @@
 import './App.css';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import MainPage from './components/Page1/MainPage';
 import './styles/global.scss';
 import Services from './components/Page3/Services';
 import AboutMe from './components/Page2/AboutMe';
@@ -11,6 +9,7 @@ import CasesMainPage from './components/Page4/CasesMainPage';
 function App() {
   
   return (
+
     <Router>
       <div className="App">
         <Routes>

@@ -1,11 +1,15 @@
 @use './../../styles/variables.scss' as *;
 nav{
+	position: sticky;
+  top: 0; 
 	display: flex;
 	justify-content:flex-end;
 	align-items: center;
 	gap: 3rem;
 	padding: 2.2rem;
 	font-family: $header-font;
+	z-index: 5;
+  background-color: #f2eed7;
 }
 a{
 	text-decoration: none;
