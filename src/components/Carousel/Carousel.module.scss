@@ -1,37 +1,48 @@
-.carousel{
+.carousel {
   position: relative;
-	margin: 3rem 0;
-  button {
-		background-color: transparent;
+  margin: 3rem 0;
+  p {
+    background-color: transparent;
     position: absolute;
     top: 40%;
+    left: 50%;
     background: none;
     border: none;
     cursor: pointer;
     z-index: 10;
-
+    margin: 0;
     img {
-      width: 63px;
-      height: 63px;
+      width: 40px;
+      height: 40px;
     }
   }
 }
-.container{
-	max-width: 1100px;
-	margin: 0 auto;
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
 }
 .custom_prev {
-    left: -40px;
-  }
+  transform: translate(calc(-100% - 200px), -22%);
+}
 
 .custom_next {
-	right: -40px;
-	transform: rotate(180deg);
+  transform: translate(calc(200px), -40%) rotate(180deg);
 }
 .carousel_img {
-	width: 100%;
-	object-fit:cover;
-	height: 250px;
-	border: 2px solid #753E0D;
-	box-shadow: 0 8px 4px #753E0D40;
+  width: 100%;
+  object-fit: cover;
+  height: 280px;
+  box-shadow: 0 8px 4px #753e0d40;
+  cursor: pointer;
+}
+
+:global(.swiper-slide) {
+  opacity: 0.5;
+  transform: scale(0.8) !important;
+  transition: all 0.5s ease-out;
+}
+
+:global(.swiper-slide-active) {
+  opacity: 1;
+  transform: scale(1) !important;
 }

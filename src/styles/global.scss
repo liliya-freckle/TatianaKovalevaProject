@@ -1,12 +1,16 @@
-@use "./variables" as *;
-@use "./mixins" as *;
+@use './variables' as *;
+@use './mixins' as *;
+
+* {
+  transition: transform 0.5s ease;
+}
 
 body {
-  font-family: "Playfair Display", sans-serif;
+  font-family: 'Playfair Display', sans-serif;
   margin: 0;
   padding: 0;
   // background-color: #d4cb8232;
-  background-color: #F2EED7;
+  background-color: #f2eed7;
 }
 
 html {

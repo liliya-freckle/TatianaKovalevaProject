@@ -6,53 +6,53 @@ import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 
-
-
-const Carousel = ({images}) => {
-
-
+const Carousel = ({ images }) => {
   return (
     <div className={styles.carousel}>
-      <button
+      <p
         id='prev'
         className={styles.custom_prev}>
         <img
           src='src/assets/images/arrow.png'
           alt='←'
         />
-      </button>
+      </p>
       <div className={styles.container}>
         <Swiper
           modules={[Navigation, Pagination]}
-          slidesPerView={4}
-          spaceBetween={20}
+          loop={true}
+          slidesPerView={3}
+          spaceBetween={60}
+          centeredSlides={true}
           navigation={{
             nextEl: '#next',
             prevEl: '#prev',
           }}
-          pagination={{ clickable: true }}
-					>
+          pagination={{ clickable: true }}>
           {images.map((src, index) => (
-            
             <SwiperSlide key={index}>
-              <img
-                src={src}
-                alt={`Slide ${index + 1}`}
-                className={styles.carousel_img}
-              />
+              <a
+                href={src}
+                target='_blank'
+                rel='noopener noreferrer'>
+                <img
+                  src={src}
+                  alt={`Slide ${index + 1}`}
+                  className={styles.carousel_img}
+                />
+              </a>
             </SwiperSlide>
-          )
-  )}
+          ))}
         </Swiper>
       </div>
-      <button
+      <p
         id='next'
         className={styles.custom_next}>
         <img
           src='src/assets/images/arrow.png'
           alt='→'
         />
-      </button>
+      </p>
     </div>
   )
 }
