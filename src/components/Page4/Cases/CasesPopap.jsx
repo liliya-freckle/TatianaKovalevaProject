@@ -1,4 +1,4 @@
-import CloseButton from '../CloseButton/CloseButton'
+import CloseButton from '../../CloseButton/CloseButton'
 import styles from './Cases.module.scss'
 
 const CasePopup = ({ data, handleClose }) => {
