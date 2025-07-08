@@ -18,11 +18,11 @@ const DiplomaImages = [
 const AboutMe = () => {
 
   return (
-    <div id="aboutme">
+    <section id="aboutme">
     <About />
     <Advantages />
     <Carousel images={DiplomaImages}/>
-    </div>
+    </section>
   )
 }
 
