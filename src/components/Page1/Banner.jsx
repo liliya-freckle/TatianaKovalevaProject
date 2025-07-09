@@ -54,7 +54,7 @@ const Banner = () => {
         </div>
         <img
           className={styles.main_img}
-          src='${import.meta.env.BASE_URL}/images/main-img.png'
+          src='/TatianaKovalevaProject/images/main-img.png'
           alt='Татьяна Ковалева'
         />
       </div>
