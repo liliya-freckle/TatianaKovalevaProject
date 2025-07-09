@@ -17,7 +17,7 @@ return (
         >
           {title}
         <img
-          src={isOpen ? '${import.meta.env.BASE_URL}/icons/up-arrow.svg' : '${import.meta.env.BASE_URL}/icons/down-arrow.svg'}
+          src={isOpen ? '/TatianaKovalevaProject/icons/up-arrow.svg' : '/TatianaKovalevaProject/icons/down-arrow.svg'}
           className={styles.img}
           alt="стрелочка вниз"
         />
