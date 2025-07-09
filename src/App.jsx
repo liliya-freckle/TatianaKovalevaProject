@@ -1,6 +1,6 @@
 import './App.css';
 import './styles/global.scss';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import Services from './components/Page3/Services';
 import AboutMe from './components/Page2/AboutMe';
@@ -13,7 +13,7 @@ function App() {
   
   return (
 
-    <Router>
+    <BrowserRouter basename="/TatianaKovalevaProject">
       <div className="App">
         <Routes>
           <Route path="/" element={<MainPage/>}/>
@@ -24,7 +24,7 @@ function App() {
           <Route path="/contacts" element={<Contacts/>}/>
         </Routes>
       </div>
-    </Router>
+    </BrowserRouter>
   )
 }
 
