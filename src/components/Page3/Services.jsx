@@ -11,7 +11,7 @@ const Services = () => {
       <h2 className={styles.title}>Услуги</h2>
       <div className={styles.serviceBlocks}>
         <div className={styles.serviceCard}>
-          <img src={'${import.meta.env.BASE_URL}/images/auto.jpg'} alt="Автоматизация" />
+          <img src={'/TatianaKovalevaProject/images/auto.jpg'} alt="Автоматизация" />
           <div className={styles.content}>
             <h3> Автоматизация </h3>
             <p>
@@ -30,7 +30,7 @@ const Services = () => {
             </p>
             <Button onClick={() => setActiveModal("single")}>Подробнее</Button>
           </div>
-          <img src={'${import.meta.env.BASE_URL}/images/single.jpg'} alt="Разовые задачи" />
+          <img src={'/TatianaKovalevaProject/images/single.jpg'} alt="Разовые задачи" />
         </div>
       </div>
       {activeModal && (
