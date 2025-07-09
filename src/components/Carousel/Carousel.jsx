@@ -15,7 +15,7 @@ const Carousel = ({ images , captions }) => {
         id='prev'
         className={styles.custom_prev}>
         <img
-          src='/TatianaKovalevaProject/images/arrow.png'
+          src='${import.meta.env.BASE_URL}/images/arrow.png'
           alt='←'
         />
       </p>
@@ -65,7 +65,7 @@ const Carousel = ({ images , captions }) => {
         id='next'
         className={styles.custom_next}>
         <img
-          src='/TatianaKovalevaProject/images/arrow.png'
+          src='${import.meta.env.BASE_URL}/images/arrow.png'
           alt='→'
         />
       </p>

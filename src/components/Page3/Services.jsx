@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import ServiceModal from "./ServiceModal";
 import Button from "../Button/Button";
-import SingleImg from "/TatianaKovalevaProject/images/single.jpg";
-import AutoImg from "/TatianaKovalevaProject/images/auto.jpg";
 import styles from "./Services.module.scss";
 
 const Services = () => {
@@ -13,7 +11,7 @@ const Services = () => {
       <h2 className={styles.title}>Услуги</h2>
       <div className={styles.serviceBlocks}>
         <div className={styles.serviceCard}>
-          <img src={AutoImg} alt="Автоматизация" />
+          <img src={'${import.meta.env.BASE_URL}/images/auto.jpg'} alt="Автоматизация" />
           <div className={styles.content}>
             <h3> Автоматизация </h3>
             <p>
@@ -32,7 +30,7 @@ const Services = () => {
             </p>
             <Button onClick={() => setActiveModal("single")}>Подробнее</Button>
           </div>
-          <img src={SingleImg} alt="Разовые задачи" />
+          <img src={'${import.meta.env.BASE_URL}/images/single.jpg'} alt="Разовые задачи" />
         </div>
       </div>
       {activeModal && (
