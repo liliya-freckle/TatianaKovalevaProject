@@ -6,6 +6,8 @@ import CloseButton from '../CloseButton/CloseButton'
 
 
 
+
+
 const Banner = () => {
   const [isPopupVisible, setIsPopupVisible] = useState(false)
 
@@ -26,7 +28,7 @@ const Banner = () => {
             <br /> Ковалева
             <img
               className={styles.small_img}
-              src='src/assets/images/i.png'
+              src='/images/i.png'
               alt='i'
               onClick={handleOpen}
             />
@@ -52,7 +54,7 @@ const Banner = () => {
         </div>
         <img
           className={styles.main_img}
-          src='src/assets/images/main-img.png'
+          src='/images/main-img.png'
           alt='Татьяна Ковалева'
         />
       </div>
