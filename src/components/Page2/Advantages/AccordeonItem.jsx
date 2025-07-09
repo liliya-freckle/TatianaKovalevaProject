@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import imageDown from "${import.meta.env.BASE_URL}/icons/down-arrow.svg";
-import imageUp from "${import.meta.env.BASE_URL}/icons/up-arrow.svg";
+// import imageDown from "";
+// import imageUp from "";
 import styles from "./advantages.module.scss";
 
 export default function AccordionItem({ title, content }) {
@@ -17,7 +17,7 @@ return (
         >
           {title}
         <img
-          src={isOpen ? imageUp : imageDown}
+          src={isOpen ? '${import.meta.env.BASE_URL}/icons/up-arrow.svg' : '${import.meta.env.BASE_URL}/icons/down-arrow.svg'}
           className={styles.img}
           alt="стрелочка вниз"
         />
