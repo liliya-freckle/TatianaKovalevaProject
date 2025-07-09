@@ -19,7 +19,6 @@ const ServiceModal = ({ type, onClose }) => {
         onClose();
       }
     };
-
     document.addEventListener("keydown", handleKeyDown);
     return () => document.removeEventListener("keydown", handleKeyDown);
   }, [onClose]);
@@ -28,6 +27,15 @@ const ServiceModal = ({ type, onClose }) => {
     if (e.target === e.currentTarget) {
       onClose();
     }
+  };
+
+  const scrollToContacts = () => {
+    document.getElementById("contacts")?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const handleScrollAndClose = () => {
+    onClose();
+    setTimeout(scrollToContacts, 100);
   };
 
   const tasks = [
@@ -60,16 +68,18 @@ const ServiceModal = ({ type, onClose }) => {
               <p className={styles.price}>
                 Стоимость рассчитывается индивидуально
               </p>
-              <Button onClick={scrollToContacts}>Рассчитать стоимость</Button>
+              <Button onClick={handleScrollAndClose}>
+                Рассчитать стоимость
+              </Button>
             </>
           ) : (
             <>
               <p className={styles.auto}>
                 Автоматизация любых процессов в проектах под запрос заказчика
-                <br />
                 для упрощения и ускорения работы сотрудников.
               </p>
               <p className={styles.auto}>
+                Пример услуг: <br />
                 – создание авторассылок и автозвонков;
                 <br />
                 – создание чат-ботов;
@@ -81,7 +91,7 @@ const ServiceModal = ({ type, onClose }) => {
               <p className={styles.price}>
                 Стоимость рассчитывается индивидуально
               </p>
-              <Button onClick={scrollToContacts}>Связаться</Button>
+              <Button onClick={handleScrollAndClose}>Связаться</Button>
             </>
           )}
         </div>
