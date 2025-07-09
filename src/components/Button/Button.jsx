@@ -1,4 +1,4 @@
-import './Button.module.scss'
+import './Button.scss'
 
 const Button = ({ onClick, children, type = 'button' }) => {
   return (

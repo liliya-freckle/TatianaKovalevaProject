@@ -1,4 +1,4 @@
-import './NavigationBar.module.scss'
+import './NavigationBar.scss'
 
 const NavigationBar = () => {
   return (
