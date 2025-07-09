@@ -1,6 +1,6 @@
 
 @use '../../../styles/mixins' as*;
-@import "../../../styles/variables.scss";
+@use "../../../styles/variables.scss" as*;
 
 .title {
   color: $title-color;
