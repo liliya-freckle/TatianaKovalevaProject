@@ -28,7 +28,7 @@ const Banner = () => {
             <br /> Ковалева
             <img
               className={styles.small_img}
-              src='/images/i.png'
+              src='/TatianaKovalevaProject/images/i.png'
               alt='i'
               onClick={handleOpen}
             />
@@ -54,7 +54,7 @@ const Banner = () => {
         </div>
         <img
           className={styles.main_img}
-          src='/images/main-img.png'
+          src='/TatianaKovalevaProject/images/main-img.png'
           alt='Татьяна Ковалева'
         />
       </div>

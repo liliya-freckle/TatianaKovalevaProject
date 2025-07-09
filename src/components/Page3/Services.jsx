@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import ServiceModal from "./ServiceModal";
 import Button from "../Button/Button";
-import SingleImg from "/images/single.jpg";
-import AutoImg from "/images/auto.jpg";
+import SingleImg from "/TatianaKovalevaProject/images/single.jpg";
+import AutoImg from "/TatianaKovalevaProject/images/auto.jpg";
 import styles from "./Services.module.scss";
 
 const Services = () => {

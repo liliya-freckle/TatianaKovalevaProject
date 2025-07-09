@@ -15,7 +15,7 @@ const Carousel = ({ images , captions }) => {
         id='prev'
         className={styles.custom_prev}>
         <img
-          src='/images/arrow.png'
+          src='/TatianaKovalevaProject/images/arrow.png'
           alt='←'
         />
       </p>
@@ -65,7 +65,7 @@ const Carousel = ({ images , captions }) => {
         id='next'
         className={styles.custom_next}>
         <img
-          src='/images/arrow.png'
+          src='/TatianaKovalevaProject/images/arrow.png'
           alt='→'
         />
       </p>

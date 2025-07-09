@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import imageDown from "/icons/down-arrow.svg";
-import imageUp from "/icons/up-arrow.svg";
+import imageDown from "/TatianaKovalevaProject/icons/down-arrow.svg";
+import imageUp from "/TatianaKovalevaProject/icons/up-arrow.svg";
 import styles from "./advantages.module.scss";
 
 export default function AccordionItem({ title, content }) {

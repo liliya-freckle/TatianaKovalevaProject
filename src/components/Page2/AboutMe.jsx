@@ -4,16 +4,16 @@ import Carousel from '../Carousel/Carousel'
 import './AboutMe.scss'
 
 const DiplomaImages = [
-  '/diploma/diploma1.png',
-  '/diploma/diploma2.png',
-  '/diploma/diploma3.jpg',
-  '/diploma/diploma4.jpg',
-  '/diploma/diploma5.png',
-  '/diploma/diploma6.png',
-  '/diploma/diploma7.jpg',
-  '/diploma/diploma8.png',
-  '/diploma/diploma9.jpg',
-  '/diploma/diploma10.png'
+  '/TatianaKovalevaProject/diploma/diploma1.png',
+  '/TatianaKovalevaProject/diploma/diploma2.png',
+  '/TatianaKovalevaProject/diploma/diploma3.jpg',
+  '/TatianaKovalevaProject/diploma/diploma4.jpg',
+  '/TatianaKovalevaProject/diploma/diploma5.png',
+  '/TatianaKovalevaProject/diploma/diploma6.png',
+  '/TatianaKovalevaProject/diploma/diploma7.jpg',
+  '/TatianaKovalevaProject/diploma/diploma8.png',
+  '/TatianaKovalevaProject/diploma/diploma9.jpg',
+  '/TatianaKovalevaProject/diploma/diploma10.png'
 ]
 
 const AboutMe = () => {
