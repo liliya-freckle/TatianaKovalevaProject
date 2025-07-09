@@ -43,9 +43,8 @@
 }
 .carousel_img {
   width: 100%;
-  object-fit: cover;
+  object-fit: contain;
   height: 280px;
-  box-shadow: 0 8px 4px #753e0d40;
   cursor: pointer;
   @media (max-width: 1000px) {
     width: 50%;
