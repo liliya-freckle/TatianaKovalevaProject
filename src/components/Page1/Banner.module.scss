@@ -1,5 +1,6 @@
-@use './../../styles/variables.scss' as *;
-@import 'https://fonts.googleapis.com/css2?family=Inter&display=swap';
+@use './../../styles/variables' as *;
+@use '../../../styles/mixins' as*;
+
 .banner{
 	margin-bottom: 6rem;
 }
