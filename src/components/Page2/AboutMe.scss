@@ -4,17 +4,14 @@
 
 #aboutme {
     @include laptop {
-        background-color: red;
         padding: 3rem;
     }
 
     @include tablet {
-        background-color: blueviolet;
         padding: 2rem;
     }
 
     @include mobile {
-        background-color: green;
         padding: 1rem;
     }
 }
