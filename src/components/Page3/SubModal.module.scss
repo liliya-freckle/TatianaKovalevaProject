@@ -5,15 +5,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 1.25rem;
   z-index: 1000;
 }
 
 .modal {
   background: #f7f5e6;
-  max-width: 600px;
+  max-width: 37.5rem;
   width: 100%;
-  padding: 36px;
+  padding: 2.25rem;
   position: relative;
   max-height: 90vh;
   overflow-y: auto;
@@ -22,15 +22,15 @@
 .list {
   list-style: none;
   padding-left: 0;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 1.6;
   text-align: left;
   color: #231d17;
 
   li {
     position: relative;
-    padding-left: 18px;
-    margin-bottom: 12px;
+    padding-left: 1.125rem;
+    margin-bottom: 0.75rem;
 
     &::before {
       content: "–";
@@ -41,8 +41,8 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 30rem) {
   .modal {
-    padding: 24px;
+    padding: 1.5rem;
   }
 }

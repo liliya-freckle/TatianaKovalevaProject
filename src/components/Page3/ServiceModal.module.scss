@@ -8,15 +8,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 1.25rem;
   z-index: 999;
 }
 
 .modal {
   background: #f7f5e6;
-  max-width: 720px;
+  max-width: 45rem;
   width: 100%;
-  padding: 40px;
+  padding: 2.5rem;
   max-height: 90vh;
   overflow-y: auto;
   position: relative;
@@ -25,10 +25,10 @@
 }
 
 p {
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
   color: rgba(35, 29, 23, 1);
-  font-size: 20px;
-  line-height: 45px;
+  font-size: 1.25rem;
+  line-height: 2.81rem;
   letter-spacing: 0%;
   text-align: center;
 }
@@ -38,7 +38,7 @@ p {
   margin: 0;
 
   li {
-    margin-bottom: 12px;
+    margin-bottom: 0.75rem;
 
     button {
       position: relative;
@@ -46,7 +46,7 @@ p {
       border: none;
       color: rgba(35, 29, 23, 1);
       font-family: "Playfair Display", serif;
-      font-size: 20px;
+      font-size: 1.25rem;
       font-weight: 700;
       padding: 10px 0;
       width: 100%;
@@ -81,19 +81,19 @@ p {
   font-family: Playfair Display;
   font-weight: 500;
   font-style: Medium;
-  font-size: 20px;
-  line-height: 45px;
+  font-size: 1.25rem;
+  line-height: 2.81rem;
 }
 
 .price {
   font-weight: 600;
-  font-size: 20px;
-  line-height: 45px;
+  font-size: 1.25rem;
+  line-height: 2.81rem;
   text-align: center;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 30rem) {
   .modal {
-    padding: 24px;
+    padding: 1.5rem;
   }
 }
