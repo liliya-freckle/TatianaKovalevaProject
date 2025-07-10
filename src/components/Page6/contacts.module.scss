@@ -4,16 +4,16 @@
 .title {
   // margin-top: 50px;
   color: $title-color;
-  margin-bottom: 40px;
+  margin-bottom: 2.5rem;
   font-weight: 400;
-  font-size: 48px;
-  line-height: 76px;
+  font-size: 3rem;
+  line-height: 4.75rem;
   text-align: center;
   vertical-align: middle;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .contactsSection {
-  padding: 80px 20px;
+  padding: 5rem 1.25rem;
   text-align: center;
   margin-top: 3rem;
   margin-bottom: 5rem;
@@ -24,9 +24,9 @@
 // }
 
 .contactsContainer p {
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 400;
-  line-height: 76px;
+  line-height: 4.75rem;
   color: $text-color;
   text-align: center;
   margin: 0;
@@ -35,12 +35,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 79px;
-  margin-top: 56px;
+  gap: 4.9375rem;
+  margin-top: 3.5rem;
 }
 .iconsContainer img {
-  width: 89px;
-  height: 84px;
+  width: 5.5625rem;
+  height: 5.25rem;
   cursor: pointer;
   transition: transform 0.3s ease;
 }
