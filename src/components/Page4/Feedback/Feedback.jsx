@@ -1,5 +1,6 @@
 import React from 'react'
 import Carousel from '../../Carousel/Carousel'
+import styles from './Feedback.module.scss'
 
 const FeedbackImages=[
     '/TatianaKovalevaProject/feedback/1.png',
@@ -46,7 +47,7 @@ const FeedbackText=[
 
 const Feedback = () => {
   return (
-    <Carousel images={FeedbackImages} captions={FeedbackText} />
+    <Carousel images={FeedbackImages} captions={FeedbackText} calssname={styles.feedback} />
   )
 }
 

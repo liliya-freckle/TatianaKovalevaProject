@@ -13,8 +13,12 @@
   }
   }
   @media (max-width: 81.25rem) {
-    padding: 1rem;
+    padding: 2rem;
   }
+  @media (min-width: 81.26rem) {
+    padding: 4rem;
+  }
+
 }
 h2 {
   color: #5e3109;
