@@ -23,9 +23,9 @@
   flex-direction: column;
   position: relative;
   background-color: $modal-background-color; /* Цвет фона модального окна */
-  min-width: 323px;
-  max-width: 500px;
-  min-height: 626px;
+  min-width: 20.1875rem;
+  max-width: 31.25rem;
+  min-height: 39.125rem;
   width: 30%; /* ширина модального окна 30% от ширины родителя (экрана) */
   height: 70%; /* высота модального окна 70% от высоты родителя (экрана) */
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
@@ -34,18 +34,18 @@
 .modal_contentText {
   display: flex;
   flex-direction: column;
-  padding: 57px 29px 31px 28px;
+  padding: 3.5625rem 1.8rem 1.9375rem 1.75rem;
   color: $text-color;
   overflow: auto;
 }
 
 .modal_contentText p {
   margin: 5px 0;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 500;
-  line-height: 25px;
+  line-height: 1.5625rem;
   text-align: left;
 }
 .modal_contentText :first-child {
-    margin-bottom: 25px;
+    margin-bottom: 1.5625rem;
 }

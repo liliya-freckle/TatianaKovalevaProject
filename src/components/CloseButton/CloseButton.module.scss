@@ -1,7 +1,7 @@
 .closeBtn {
   position: absolute;
-  top: 24px;
-  right: 24px;
+  top: 1.5rem;
+  right: 1.5rem;
   background: none;
   border: none;
   padding: 0;
@@ -12,8 +12,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 32px;
-    height: 32px;
+    width: 2rem;
+    height: 2rem;
     background-color: #f7f5e6;
     border: 2px solid rgba(35, 29, 23, 1);
     border-radius: 50%;
@@ -30,18 +30,18 @@
     pointer-events: none;
   }
 
-  @media (max-width: 480px) {
-    top: 16px;
-    right: 16px;
+  @media (max-width: 30rem) {
+    top: 1rem;
+    right: 1rem;
 
     .circle {
-      width: 32px;
-      height: 32px;
+      width: 2rem;
+      height: 2rem;
     }
 
     svg {
-      width: 14px;
-      height: 14px;
+      width: 0.875rem;
+      height: 0.875rem;
     }
   }
 }
