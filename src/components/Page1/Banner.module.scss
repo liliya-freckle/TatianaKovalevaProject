@@ -17,7 +17,7 @@ h1{
 	font-size: 6rem;
 	text-align: center;
 	margin: 0;
-	line-height: 12.667rem;
+	line-height: 4.75rem;
 	color: $title-color;
 	font-weight: 400;
 	position: relative;
@@ -48,6 +48,7 @@ h1{
 }
 .main_img{
 	max-width: 28.5rem;
+	max-height: 34.625rem;
 	@media (max-width: 64rem) {
 		width: 100%;
 	}
