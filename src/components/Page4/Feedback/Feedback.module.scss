@@ -1,0 +1,9 @@
+.feedback {
+    padding: 2rem; 
+    @media (min-width: 100rem) {
+        padding: 3rem;
+}
+    @media (min-width: 140rem) {
+        padding: 4rem;
+}
+}
