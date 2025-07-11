@@ -12,33 +12,45 @@
   z-index: 999;
 }
 
-.modal {
+.serviceModal {
   background: #f7f5e6;
   max-width: 45rem;
   width: 100%;
   padding: 2.5rem;
-  max-height: 90vh;
+  max-height: 85vh;
   overflow-y: auto;
   position: relative;
   box-shadow: 0 8px 40px rgba(0, 0, 0, 0.25);
   text-align: center;
+
+  @media (min-width: 1440px) {
+    max-width: 894px;
+    padding: 2rem 2.5rem;
+    max-height: 80vh;
+  }
+
+  p {
+    margin-bottom: 1.25rem;
+    color: rgba(35, 29, 23, 1);
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 2.81rem;
+    text-align: left;
+
+    @media (min-width: 1440px) {
+      font-size: 1rem;
+      line-height: 1.6rem;
+    }
+  }
 }
 
-p {
-  margin-bottom: 1.25rem;
-  color: rgba(35, 29, 23, 1);
-  font-size: 1.25rem;
-  line-height: 2.81rem;
-  letter-spacing: 0%;
-  text-align: center;
-}
 .list {
   list-style: none;
   padding: 0;
   margin: 0;
 
   li {
-    margin-bottom: 0.75rem;
+    margin-bottom: 0 0.75rem;
 
     button {
       position: relative;
@@ -53,6 +65,10 @@ p {
       text-align: left;
       cursor: pointer;
       transition: color 0.3s ease;
+      @media (min-width: 1440px) {
+        font-size: 1rem;
+        line-height: 1.6rem;
+      }
 
       &::after {
         content: "";
