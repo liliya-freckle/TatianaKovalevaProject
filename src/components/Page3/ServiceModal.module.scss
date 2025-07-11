@@ -23,6 +23,12 @@
   box-shadow: 0 8px 40px rgba(0, 0, 0, 0.25);
   text-align: center;
 
+  @media (min-width: 1440px) {
+    max-width: 894px;
+    padding: 2rem 2.5rem;
+    max-height: 80vh;
+  }
+
   p {
     margin-bottom: 1.25rem;
     color: rgba(35, 29, 23, 1);
@@ -30,6 +36,11 @@
     font-weight: 500;
     line-height: 2.81rem;
     text-align: left;
+
+    @media (min-width: 1440px) {
+      font-size: 1rem;
+      line-height: 1.6rem;
+    }
   }
 }
 
@@ -39,7 +50,7 @@
   margin: 0;
 
   li {
-    margin-bottom: 0.75rem;
+    margin-bottom: 0 0.75rem;
 
     button {
       position: relative;
@@ -54,6 +65,10 @@
       text-align: left;
       cursor: pointer;
       transition: color 0.3s ease;
+      @media (min-width: 1440px) {
+        font-size: 1rem;
+        line-height: 1.6rem;
+      }
 
       &::after {
         content: "";
