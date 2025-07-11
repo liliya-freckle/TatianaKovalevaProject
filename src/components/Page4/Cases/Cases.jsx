@@ -91,7 +91,7 @@ const Cases = () => {
     setPopupData(null)
   }
   return (
-    <div
+  <div
       className={styles.cases}
       id='cases'>
       <h2>Кейсы</h2>
