@@ -5,7 +5,8 @@
 
 .title {
   color: #5e3109;
-  margin-bottom: 2.5rem;
+  // margin-bottom: 2.5rem;
+  // padding-top: 2rem;
   font-weight: 400;
   font-size: 3rem;
   line-height: 4.75rem;
@@ -73,6 +74,9 @@
 }
 
 @media (max-width: 48rem) {
+  .servicesSection {
+    padding-top: 0;
+  }
   .serviceCard {
     flex: 1 1 100%;
   }
@@ -83,10 +87,12 @@
       margin-top: 1.25rem;
     }
   }
-
   .title {
-    font-size: 1.75rem;
+    margin-top: 0;
   }
+  // .title {
+  //   font-size: 1.75rem;
+  // }
 
   .content {
     width: 100%;

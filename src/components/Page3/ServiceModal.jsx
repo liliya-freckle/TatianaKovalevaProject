@@ -4,9 +4,9 @@ import SubModal from "./SubModal";
 import CloseButton from "../CloseButton/CloseButton";
 import styles from "./ServiceModal.module.scss";
 
-const scrollToContacts = () => {
-  document.getElementById("contacts")?.scrollIntoView({ behavior: "smooth" });
-};
+// const scrollToContacts = () => {
+//   document.getElementById("contacts")?.scrollIntoView({ behavior: "smooth" });
+// };
 
 const ServiceModal = ({ type, onClose }) => {
   const [subModal, setSubModal] = useState(null);
