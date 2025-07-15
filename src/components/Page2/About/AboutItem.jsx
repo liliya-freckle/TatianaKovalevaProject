@@ -1,10 +1,11 @@
 import React from 'react';
 import styles from './about.module.scss';
 
-export default function AboutItem({ number, description, subText, setIsOpen }) {
-  return (
-    <div className={styles.statisticItem}>
-      <div className={styles.statisticNumber}>{number}</div>
+export default function AboutItem({ number, description, subText, setIsOpen, className }) {
+
+return (
+    <div className={`${styles.statisticItem} ${className}`}>
+              <div className={styles.statisticNumber}>{number}</div>
       <div className={styles.statisticDescription}>{description}</div>
       {subText && (
         <div 

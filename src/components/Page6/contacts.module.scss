@@ -2,7 +2,6 @@
 
 
 .title {
-  // margin-top: 50px;
   color: $title-color;
   margin-bottom: 2.5rem;
   font-weight: 400;
@@ -15,7 +14,6 @@
 .contactsSection {
   padding: 5rem 1.25rem;
   text-align: center;
-  // margin-top: 3rem;
   margin-bottom: 5rem;
 }
 
@@ -26,19 +24,31 @@
   color: $text-color;
   text-align: center;
   margin: 0;
+
+  @media (max-width: $mobile) {
+    font-size: 1.5rem;
+    line-height: 3.5rem;
+  }
 }
 .iconsContainer {
   display: flex;
   justify-content: center;
   align-items: center;
-  // gap: 4.9375rem;
-  gap: 3rem;
+  gap: 4.9375rem;
+
   margin-top: 3.5rem;
   padding: 0 1.25rem;
+    @media (max-width: $mobile) {
+    gap: 2.5rem;
+  }
 }
 .iconsContainer img {
-  width: 5.5625rem;
+  width: 5.25rem;
   height: 5.25rem;
   cursor: pointer;
   transition: transform 0.3s ease;
+  @media (max-width: $mobile) {
+    width: 4rem;
+    height: 4rem;
+  }
 }
