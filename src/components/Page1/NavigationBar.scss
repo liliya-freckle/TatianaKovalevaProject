@@ -37,13 +37,13 @@
 
 .nav-links{
 	position: sticky;
-	margin-bottom: 2.6rem;
+	// margin-bottom: 2.6rem;
   top: 0; 
 	display: flex;
 	justify-content:flex-end;
 	align-items: center;
 	gap: 3rem;
-	padding: 2.2rem;
+	padding: 1.5rem;
 	font-family: $header-font;
 	z-index: 12;
   background-color: #f2eed7;
