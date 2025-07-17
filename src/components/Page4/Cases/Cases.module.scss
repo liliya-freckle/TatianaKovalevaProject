@@ -59,7 +59,7 @@ p {
   }
 }
 p {
-  font-size: 1.625rem;
+  font-size: 1.5rem;
   line-height: 1.4;
   margin: 3rem 0 5rem 0;
   @media (max-width: 43.75rem) {
@@ -85,8 +85,8 @@ p {
   z-index: 1000;
   .close_img {
     position: absolute;
-    top: 1.5625rem;
-    right: 1.5625rem;
+    top: 1.5rem;
+    right: 1.5rem;
     cursor: pointer;
     width: 2rem;
     z-index: 100;
@@ -95,28 +95,28 @@ p {
     position: relative;
     background-color: #f2eed7;
     box-shadow: 0px 4px 4px #00000040;
-    padding: 1rem 1.5rem;
-    width: 55rem;
-    max-height: 60%;
     overflow-y: auto;
+    max-width: 894px;
+    padding: 2rem 2.5rem;
+    max-height: 80vh;
     @media (max-width: 62.5rem) {
       width: 80%;
     }
   }
   h3 {
     @media (max-width: 43.75rem) {
-      font-size: 2rem;
+      font-size: 1.5rem;
     }
   }
 
   p {
-    margin: 3rem 0;
+    margin: 2rem 0;
   }
   .text {
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-weight: 700;
     @media (max-width: 43.75rem) {
-      font-size: 1.75rem;
+      font-size: 1.5rem;
     }
   }
   ul {
@@ -137,9 +137,9 @@ p {
   }
   li {
     text-align: start;
-    font-size: 1.25rem;
+    font-size: 1rem;
     @media (max-width: 43.75rem) {
-      font-size: 1.75rem;
+      font-size: 1.5rem;
     }
   }
 }
