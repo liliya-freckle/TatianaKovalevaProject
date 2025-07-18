@@ -13,7 +13,7 @@
 }
 
 .serviceModal {
-  background: #f7f5e6;
+  background: $modal-background-color;
   max-width: 45rem;
   width: 100%;
   padding: 2.5rem;
@@ -22,8 +22,9 @@
   position: relative;
   box-shadow: 0 8px 40px rgba(0, 0, 0, 0.25);
   text-align: center;
+  animation: fadeIn 1s ease forwards;
 
-  @media (min-width: 1440px) {
+  @media (min-width: $desktop) {
     max-width: 894px;
     padding: 2rem 2.5rem;
     max-height: 80vh;
@@ -37,8 +38,12 @@
     line-height: 2.81rem;
     text-align: left;
 
-    @media (min-width: 1440px) {
+    @media (min-width: $desktop) {
       font-size: 1rem;
+      line-height: 1.6rem;
+    }
+
+    @media (max-width: $mobile) {
       line-height: 1.6rem;
     }
   }
@@ -56,8 +61,8 @@
       position: relative;
       background: none;
       border: none;
-      color: rgba(35, 29, 23, 1);
-      font-family: "Playfair Display", serif;
+      color: $text-color;
+      font-family: $primary-font;
       font-size: 1.25rem;
       font-weight: 700;
       padding: 10px 0;
@@ -65,8 +70,12 @@
       text-align: left;
       cursor: pointer;
       transition: color 0.3s ease;
-      @media (min-width: 1440px) {
+
+      @media (min-width: $desktop) {
         font-size: 1rem;
+        line-height: 1.6rem;
+      }
+      @media (max-width: $mobile) {
         line-height: 1.6rem;
       }
 
@@ -77,12 +86,12 @@
         left: 0;
         height: 1px;
         width: 0%;
-        background-color: rgba(35, 29, 23, 1);
+        background-color: $text-color;
         transition: width 0.3s ease-in-out;
       }
 
       &:hover {
-        color: #5e3109;
+        color: $title-color;
 
         &::after {
           width: 100%;
@@ -94,7 +103,7 @@
 
 .auto {
   text-align: left;
-  font-family: Playfair Display;
+  font-family: $primary-font;
   font-weight: 500;
   font-style: Medium;
   font-size: 1.25rem;
@@ -108,8 +117,17 @@
   text-align: center;
 }
 
-@media (max-width: 30rem) {
+@media (max-width: $mobile) {
   .modal {
     padding: 1.5rem;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
