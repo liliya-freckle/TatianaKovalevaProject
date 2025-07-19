@@ -36,8 +36,11 @@
   font-size: 1.25rem;
   line-height: 2.81rem;
   color: $text-color;
-  @media (max-width: $mobile) {
+    @media (max-width: $tablet) {
     line-height: 2rem;
+  }
+  @media (max-width: $mobile) {
+    line-height: 1.8rem;
   }
 }
 
