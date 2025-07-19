@@ -1,5 +1,4 @@
-@use "../../styles/variables" as*;
-
+@use "../../styles/variables" as *;
 
 .title {
   color: $title-color;
@@ -40,7 +39,7 @@
   gap: 4.9375rem;
   margin-top: 3.5rem;
   padding: 0 1.25rem;
-    @media (max-width: $mobile) {
+  @media (max-width: $mobile) {
     gap: 2.5rem;
   }
 }
