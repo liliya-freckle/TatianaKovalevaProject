@@ -1,15 +1,12 @@
 import Button from '../Button/Button'
 import NavigationBar from './NavigationBar'
 import styles from './Banner.module.scss'
-import { useState } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import CloseButton from '../CloseButton/CloseButton'
-
-
-
-
 
 const Banner = () => {
   const [isPopupVisible, setIsPopupVisible] = useState(false)
+  const popupRef = useRef(null)
 
   const handleOpen = () => setIsPopupVisible(true)
   const handleClose = () => setIsPopupVisible(false)
@@ -18,6 +15,19 @@ const Banner = () => {
     const el = document.getElementById('contacts')
     el?.scrollIntoView({ behavior: 'smooth' })
   }
+
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (isPopupVisible && popupRef.current && !popupRef.current.contains(e.target)) {
+        handleClose()
+      }
+    }
+
+    document.addEventListener('mousedown', handleClickOutside)
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside)
+    }
+  }, [isPopupVisible])
 
   return (
     <div className={styles.banner}>
@@ -33,8 +43,9 @@ const Banner = () => {
               onClick={handleOpen}
             />
           </h1>
+
           {isPopupVisible && (
-            <div className={styles.hidden_text}>
+            <div className={styles.hidden_text} ref={popupRef}>
               <CloseButton onClick={handleClose} />
               <p>
                 Сертифицированный технический специалист одной из крупных
@@ -45,6 +56,7 @@ const Banner = () => {
               </p>
             </div>
           )}
+
           <p>
             Сертифицированный
             <br /> технический специалист
