@@ -51,7 +51,7 @@ const ServiceModal = ({ type, onClose }) => {
   return (
     <>
       <div className={styles.overlay} onClick={handleOverlayClick}>
-        <div className={styles.modal} ref={modalRef}>
+        <div className={styles.serviceModal} ref={modalRef}>
           <CloseButton onClick={onClose} />
           {isSingle ? (
             <>

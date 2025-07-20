@@ -2,16 +2,16 @@
 @use '../../styles/variables.scss' as*;
 
 
-#aboutme {
-    @include laptop {
-        padding: 3rem;
-    }
+// #aboutme {
+//     @include laptop {
+//         padding: 3rem;
+//     }
 
-    @include tablet {
-        padding: 2rem;
-    }
+//     @include tablet {
+//         padding: 2rem;
+//     }
 
-    @include mobile {
-        padding: 1rem;
-    }
-}
+//     @include mobile {
+//         padding: 1rem;
+//     }
+// }

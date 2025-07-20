@@ -3,7 +3,6 @@
 .title {
   color: $title-color;
   margin-bottom: 2.5rem;
-  // padding-top: 2rem;
   font-weight: 400;
   font-size: 3rem;
   line-height: 4.75rem;
@@ -14,13 +13,7 @@
 .jobstagesSection {
   padding: 1.25rem;
   text-align: center;
-  @media (min-width: 100rem) {
-    padding-left: 3rem;
 }
-  
-  @media (min-width: 120rem) {
-    padding-left: 3.5rem;
-}}
 
 .stages {
   display: flex;
@@ -34,6 +27,9 @@
   flex: 1 1 18.75rem;
   max-width: 21.25rem;
   text-align: left;
+  @media (max-width: $mobile) {
+    text-align: center;
+  }
   
 }
 .stageNumberWrapper {
@@ -62,5 +58,9 @@
     line-height: 1.5625rem;
     color: $text-color;
     text-shadow: rgba(0, 0, 0, 0.25) 0px 4px 4px;
+      @media (max-width: $mobile) {
+
+    font-weight: 400;
+  }
    }
 

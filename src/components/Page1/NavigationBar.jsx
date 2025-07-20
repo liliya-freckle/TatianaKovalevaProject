@@ -8,7 +8,7 @@ const NavigationBar = () => {
   const scrollToWithOffset = (id) => {
     const element = document.getElementById(id);
     if (element) {
-      const offset = 150;
+      const offset = 70;
       const bodyRect = document.body.getBoundingClientRect().top;
       const elementRect = element.getBoundingClientRect().top;
       const elementPosition = elementRect - bodyRect;
@@ -36,7 +36,10 @@ const NavigationBar = () => {
       </div>
     <nav className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
       <a href="#aboutme" onClick={handleNavClick}>Обо мне</a>
-      <a href="#services" onClick={handleNavClick}>Услуги</a>
+      <a href="#services"onClick={(e) => {
+              e.preventDefault();
+              scrollToWithOffset('services');
+            }}>Услуги</a>
       <a href="#cases" onClick={(e) => {
               e.preventDefault();
               scrollToWithOffset('cases');
