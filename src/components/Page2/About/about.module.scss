@@ -1,6 +1,5 @@
-
-@use '../../../styles/mixins' as*;
-@use "../../../styles/variables.scss" as*;
+@use "../../../styles/mixins" as *;
+@use "../../../styles/variables.scss" as *;
 
 .title {
   color: $title-color;
@@ -17,7 +16,6 @@
 }
 .aboutSection {
   padding: 1.25rem 1.25rem;
-  // padding: 0 1.25rem;
   text-align: center;
 }
 .statistics {
@@ -26,6 +24,12 @@
   justify-content: space-around;
   gap: 3.125rem;
   font-family: $secondary-font;
+  @media (max-width: $tablet) {
+    row-gap: 1.5rem;
+  }
+  @media (max-width: $mobile) {
+    row-gap: 1rem;
+  }
 }
 
 .statisticItem {
@@ -34,30 +38,33 @@
   max-width: 16.25rem;
 }
 
-  .statisticNumber {
-    font-size: 6rem;
-    line-height: 6.875rem;
-    font-weight: 900;
-    color: $bigtext-color;
+.statisticNumber {
+  font-size: 6rem;
+  line-height: 6.875rem;
+  font-weight: 900;
+  color: $bigtext-color;
+}
+
+.statisticDescription {
+  font-size: 1.5rem;
+  font-weight: 900;
+  line-height: 1.56rem;
+  color: $text-color;
+  text-shadow: rgba(0, 0, 0, 0.25) 0px 4px 4px;
+  @media (max-width: $mobile) {
+    font-weight: 400;
   }
+}
 
-  .statisticDescription {
-    font-size: 1.5rem;
-    font-weight: 900;
-    line-height: 1.56rem;
-    color: $text-color;
-    text-shadow: rgba(0, 0, 0, 0.25) 0px 4px 4px;
-  }
+.statisticSubtext {
+  font-family: $primary-font;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  line-height: 4.75rem;
+  color: $subtext-color;
+  cursor: pointer;
+}
 
-  .statisticSubtext {
-    font-family: $primary-font;
-    font-size: 0.9375rem;
-    font-weight: 700;
-    line-height: 4.75rem;
-    color: $subtext-color;
-    cursor: pointer;
-     }
-
-     .firstItem {
+.firstItem {
   max-width: 10rem;
 }

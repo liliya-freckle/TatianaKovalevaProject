@@ -54,10 +54,14 @@
   font-weight: 500;
   @media (max-width: $mobile) {
     font-size: 1rem;
+    margin: 0;
   }
 }
 .modal_contentText :first-child {
   margin-bottom: 1.5625rem;
+  @media (max-width: $mobile) {
+    margin-bottom: 1rem;
+  }
 }
 
 @keyframes fadeIn {

@@ -21,7 +21,6 @@
   justify-content: center;
   gap: 2.5rem;
   padding: 0 1.25rem;
-
   flex-wrap: wrap;
 }
 
@@ -65,12 +64,18 @@
     font-size: 2rem;
     line-height: 3.375rem;
     text-align: center;
+    @media (max-width: $mobile) {
+      line-height: 2.5rem;
+    }
   }
 
   p {
     font-weight: 600;
     line-height: 1.875rem;
     text-align: center;
+    @media (max-width: 768px) {
+      margin: 1rem 0 2rem 0;
+    }
   }
 }
 
@@ -91,6 +96,9 @@
   .title {
     margin-top: 0;
   }
+  // p {
+  //   margin: 1rem 0 2rem 0;
+  // }
 
   .content {
     width: 100%;
