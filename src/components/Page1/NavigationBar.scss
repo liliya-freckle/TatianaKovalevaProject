@@ -1,17 +1,18 @@
 @use './../../styles/variables' as *;
 .burger_container {
   display: none;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: #f2eed7;
+  z-index: 160;
+  height: 50px;
   @media (max-width: 1000px) {
     display: block;
-    position: sticky;
-    top: 0;
-    background-color: #f2eed7;
-    z-index: 160;
-    height: 50px;
   }
 }
 .burger-icon {
-  display: none;
+  display: flex;
   flex-direction: column;
   justify-content: space-around;
   width: 30px;
@@ -20,10 +21,6 @@
   position: fixed;
   padding: 1rem;
   z-index: 150;
-  @media (max-width: 1000px) {
-    display: flex;
-    position: fixed;
-  }
   span {
     display: block;
     width: 100%;

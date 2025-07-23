@@ -8,7 +8,7 @@ const NavigationBar = () => {
   const scrollToWithOffset = (id) => {
     const element = document.getElementById(id);
     if (element) {
-      const offset = 90;
+      const offset = window.innerWidth <= 1000 ? 50 : 90;
       const bodyRect = document.body.getBoundingClientRect().top;
       const elementRect = element.getBoundingClientRect().top;
       const elementPosition = elementRect - bodyRect;
