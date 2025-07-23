@@ -17,12 +17,10 @@
   width: 30px;
   height: 24px;
   cursor: pointer;
-  position: fixed;
   padding: 1rem;
   z-index: 150;
   @media (max-width: 1000px) {
     display: flex;
-    position: fixed;
   }
   span {
     display: block;
