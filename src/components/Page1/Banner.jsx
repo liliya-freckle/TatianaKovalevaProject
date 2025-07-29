@@ -40,10 +40,11 @@ const Banner = () => {
               className={styles.small_img}
               src='/TatianaKovalevaProject/images/i.png'
               alt='i'
-              onClick={handleOpen}
+              onClick={(e) => {
+                e.stopPropagation()
+                handleOpen()}}
             />
           </h1>
-
           {isPopupVisible && (
             <div className={styles.hidden_text} ref={popupRef}>
               <CloseButton onClick={handleClose} />
