@@ -1,0 +1,73 @@
+.carousel {
+  position: relative;
+  margin-top: 3rem;
+  p {
+    background-color: transparent;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+    margin: 0;
+    @media (max-width: 62.5rem) {
+      left: 10%;
+    }
+    @media (max-width: 37.5rem) {
+      display: none;
+    }
+    img {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+  }
+}
+.container {
+  max-width: 80rem;
+  margin: 0 auto;
+}
+.custom_prev {
+  transform: translate(calc(-100% - 12.5rem), -22%);
+  @media (max-width: 62.5rem) {
+    transform: translate(0, -40%);
+  }
+}
+
+.custom_next {
+  transform: translate(calc(12.5rem), -40%) rotate(180deg);
+  @media (max-width: 62.5rem) {
+    transform: translate(0, -40%) rotate(180deg);
+    right: 10%;
+  }
+}
+.carousel_img {
+  width: 80%;
+  object-fit: contain;
+  height: 17rem;
+  cursor: pointer;
+  @media (max-width: 62.5rem) {
+    width: 50%;
+  }
+  @media (max-width: 37.5rem) {
+    width: 80%;
+  }
+}
+
+:global(.swiper-slide) {
+  opacity: 0.5;
+  transform: scale(0.8) !important;
+  transition: all 0.5s ease-out;
+}
+
+:global(.swiper-slide-active) {
+  opacity: 1;
+  transform: scale(1) !important;
+}
+.caption {
+  margin-top: 0.625rem;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #753E0D;
+  min-height: 1.5em; /* чтобы высота была постоянная и не прыгала */
+}

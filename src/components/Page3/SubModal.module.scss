@@ -1,0 +1,112 @@
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.25rem;
+  z-index: 1000;
+}
+
+.modal {
+  background: $modal-background-color;
+  max-width: 37.5rem;
+  width: 100%;
+  padding: 2.25rem;
+  position: relative;
+  max-height: 90vh;
+  overflow-y: auto;
+  animation: fadeIn 1s ease forwards;
+
+  @media (min-width: $desktop) {
+    max-width: 894px;
+    padding: 2rem 2.5rem;
+    max-height: 80vh;
+  }
+}
+
+.list {
+  list-style: none;
+  padding-left: 0;
+  font-size: 1.125rem;
+  line-height: 1.6;
+  text-align: left;
+  color: $text-color;
+
+  .subheading {
+    font-weight: normal;
+    margin-bottom: 0.5rem;
+    color: $text-color;
+  }
+
+  .nobullet {
+    list-style: none;
+    padding-left: 0;
+
+    &::before {
+      content: none;
+    }
+    .nestedList {
+      list-style: none;
+      padding-left: 0;
+
+      li {
+        position: relative;
+        padding-left: 1.125rem;
+        margin-bottom: 0.75rem;
+
+        &::before {
+          content: "–";
+          position: absolute;
+          left: 0;
+          color: $button-background-color;
+        }
+      }
+    }
+  }
+
+  li {
+    position: relative;
+    padding-left: 1.125rem;
+    margin-bottom: 0.75rem;
+
+    &::before {
+      content: "–";
+      position: absolute;
+      left: 0;
+      color: $button-background-color;
+    }
+
+    @media (max-width: $mobile) {
+      line-height: 1.6rem;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  @media (max-width: $mobile) {
+    line-height: 1.6rem;
+  }
+}
+
+@media (max-width: $mobile) {
+  .modal {
+    padding: 1.5rem;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

@@ -1,59 +1,67 @@
+@use "../../../styles/mixins" as *;
+@use "../../../styles/variables.scss" as *;
+
 .title {
-    margin-top: 50px;
-  color: #5e3109;
-  margin-bottom: 40px;
+  color: $title-color;
+  margin-bottom: 2.5rem;
   font-weight: 400;
-  font-size: 48px;
-  line-height: 76px;
+  font-size: 3rem;
+  line-height: 4.75rem;
   text-align: center;
   vertical-align: middle;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-// h2 {
-//     margin-top: 50px;
-//   color: #5e3109;
-//   margin-bottom: 40px;
-//   font-weight: 400;
-//   font-size: 48px;
-//   line-height: 76px;
-//   text-align: center;
-//   vertical-align: middle;
-//   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-// }
-
+.aboutSection {
+  padding: 1.25rem 1.25rem;
+  text-align: center;
+}
 .statistics {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
- gap: 50px;
- font-family: 'Playfair', sans-serif;
+  gap: 3.125rem;
+  font-family: $secondary-font;
+  @media (max-width: $tablet) {
+    row-gap: 1.5rem;
+  }
+  @media (max-width: $mobile) {
+    row-gap: 1rem;
+  }
 }
 
 .statisticItem {
-   
+  flex: 1 1 16.25rem;
   text-align: center;
-  max-width: 260px;
+  max-width: 16.25rem;
 }
 
+.statisticNumber {
+  font-size: 6rem;
+  line-height: 6.875rem;
+  font-weight: 900;
+  color: $bigtext-color;
+}
 
-  .statisticNumber {
-    font-size: 96px;
-    line-height: 110px;
-    font-weight: 900;
-    color: rgba(35, 29, 23, 0.81);
+.statisticDescription {
+  font-size: 1.5rem;
+  font-weight: 900;
+  line-height: 1.56rem;
+  color: $text-color;
+  text-shadow: rgba(0, 0, 0, 0.25) 0px 4px 4px;
+  @media (max-width: $mobile) {
+    font-weight: 400;
   }
+}
 
+.statisticSubtext {
+  font-family: $primary-font;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  line-height: 4.75rem;
+  color: $subtext-color;
+  cursor: pointer;
+}
 
-  .statisticDescription {
-    font-size: 24px;
-    font-weight: 900;
-    line-height: 25px;
-    color: rgba(35, 29, 23, 1);
-  }
-
-  .statisticSubtext {
-    font-size: 15px;
-    font-weight: 700;
-    line-height: 76px;
-    color: rgba(35, 29, 23, 0.5);
-    cursor: pointer;
-     }
+.firstItem {
+  max-width: 10rem;
+}

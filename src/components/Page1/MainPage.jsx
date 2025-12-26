@@ -1,25 +1,23 @@
-import React from "react";
-import Button from "../Button/Button";
-import Services from "../Page 3/Services";
-import NavigationBar from "./NavigationBar";
-import AboutMe from "../Page2/AboutMe";
-import Cases from "../Page4/Cases";
-import JobStages from "../Page5/JobStages";
-import Contacts from "../Page6/Contacts";
+// import Services from '../Page3/Services'
+// import AboutMe from '../Page2/AboutMe'
+// import CasesMainPage from '../Page4/CasesMainPage'
+// import JobStages from '../Page5/JobStages'
+// import Contacts from '../Page6/Contacts'
+// import Banner from './Banner'
+// import NavigationBar from './NavigationBar'
 
-const MainPage = () => {
-  return (
-    <>
-      <NavigationBar />
-      <div>Обо мне</div>
-      <Button>Связаться</Button>
-      <AboutMe id="aboutme" />
-      <Services id="services" />
-      <Cases id="cases" />
-      <JobStages id="jobstages" />
-      <Contacts id="contacts" />
-    </>
-  );
-};
+// const MainPage = () => {
+//   return (
+//     <>
+//       <NavigationBar/>
+//       <Banner />
+//       <AboutMe id='aboutme' />
+//       <Services id='services' />
+//       <CasesMainPage id='cases' />
+//       <JobStages id='jobstages' />
+//       <Contacts id='contacts' />
+//     </>
+//   )
+// }
 
-export default MainPage;
+// export default MainPage

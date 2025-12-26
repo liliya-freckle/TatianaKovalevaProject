@@ -1,50 +1,58 @@
+@use "../../../styles/variables.scss" as *;
+
 .title {
-    margin-top: 50px;
-  color: #5e3109;
-  margin-bottom: 40px;
+  color: $title-color;
+  margin-bottom: 2.5rem;
   font-weight: 400;
-  font-size: 48px;
-  line-height: 76px;
+  font-size: 3rem;
   text-align: center;
   vertical-align: middle;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  @media (max-width: $mobile) {
+    line-height: 3.5rem;
+  }
 }
-// .container {
-// background-color: rgb(200, 159, 239);
-// max-width: 1280px;
-// }
-// .accordionItem {
-// width: 100%;
-// }
+.advantagesSection {
+  padding: 1.25rem 1.25rem;
+  text-align: center;
+}
+
 .accordionTitle {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  text-align: left;
+  padding: 1.5rem 0;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 800;
-  line-height: 76px;
-  color: rgba(35, 29, 23, 1);
+  color: $text-color;
   border-bottom: 1px solid rgba(35, 29, 23, 0.5);
-background: url("/icons/tick.png") left no-repeat;
-background-size: 31px 31px; 
-  padding-left: 40px;
+  background: url("/icons/tick.png") left no-repeat;
+  background-size: 1.9375rem 1.9375rem;
+  padding-left: 2.5rem;
 }
 
 .accordionContent {
-  margin-top: 20px;
-  margin-bottom: 20px;
-font-weight: 500;
-font-size: 20px;
-line-height: 45px;
-
-color: rgba(35, 29, 23, 1);
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 2.81rem;
+  color: $text-color;
+  @media (max-width: $tablet) {
+    line-height: 2rem;
+  }
+  @media (max-width: $mobile) {
+    line-height: 1.8rem;
+  }
 }
 
 .active {
-  background-color:rgba(117, 62, 13, 0.3);
+  // background-color:$accordeon-background-color;
+  background-color: $button-hover;
 }
 
-.img {
-margin-right: 25px;
+.accordionItem img {
+  margin-right: 0.9375rem;
+  width: 1.25rem;
 }
