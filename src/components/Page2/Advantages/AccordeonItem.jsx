@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import imageDown from "/icons/down-arrow.svg";
-import imageUp from "/icons/up-arrow.svg";
+// import imageDown from "";
+// import imageUp from "";
 import styles from "./advantages.module.scss";
 
 export default function AccordionItem({ title, content }) {
@@ -11,16 +11,15 @@ export default function AccordionItem({ title, content }) {
 
 return (
     <div className={styles.accordionItem}>
-              <div
-        className={`${styles.accordionTitle} ${isOpen ? styles.active : ""}`}
-        onClick={handleIsOpen}
-      >
-        {title}
+        <div
+          className={`${styles.accordionTitle} ${isOpen ? styles.active : ""}`}
+          onClick={handleIsOpen}
+        >
+          {title}
         <img
-          src={isOpen ? imageUp : imageDown}
-          width="15px"
+          src={isOpen ? '/TatianaKovalevaProject/icons/up-arrow.svg' : '/TatianaKovalevaProject/icons/down-arrow.svg'}
           className={styles.img}
-          alt="arrow"
+          alt="стрелочка вниз"
         />
       </div>
 

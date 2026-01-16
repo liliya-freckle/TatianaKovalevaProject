@@ -1,12 +1,26 @@
-@mixin button {
-  min-width: 220px;
-  height: 60px;
-  padding: 10px 20px;
-  border: none;
-  border-radius: $border-radius;
-  cursor: pointer;
-  background-color: $button-background-color;
-  color: $button-text;
-  font-family: $primary-font;
-  font-size: $primary-font-size;
+@use './variables' as *;
+
+
+@mixin mobile {
+    @media (max-width: #{$mobile}) {
+        @content;
+  }
+}
+
+@mixin tablet {
+    @media (max-width: #{$tablet}) {
+        @content;
+  }
+}
+
+@mixin laptop {
+    @media (max-width: #{$laptop}) {
+        @content;
+  }
+}
+
+@mixin desktop {
+  @media (max-width: #{$desktop}) {
+    @content;
+  }
 }

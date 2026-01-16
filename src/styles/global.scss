@@ -1,13 +1,37 @@
-@import "./variables";
-@import "./mixins";
+@use './variables' as *;
+@use './mixins' as *;
+
+* {
+  transition: transform 0.5s ease;
+}
 
 body {
-  font-family: "Playfair Display", sans-serif;
+  font-family: 'Playfair Display', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #d4cb8232;
+  background-color: #f2eed7;
 }
 
 html {
   scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+@media (min-width: 100rem) {
+  html {
+    font-size: 21px;
+  }
+}
+
+
+@media (min-width: 120rem) {
+  html {
+    font-size: 25px;
+  }
+}
+
+@media (min-width: 140rem) {
+  html {
+    font-size: 28px;
+  }
 }

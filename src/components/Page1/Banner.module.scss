@@ -1,0 +1,108 @@
+@use './../../styles/variables' as *;
+
+
+.banner{
+	margin-bottom: 1rem;
+	@media (max-width: 1000px){
+		margin-top: 3rem;
+	}
+}
+.container{
+	display: flex;
+	justify-content: space-around;
+	margin-top: 1rem;
+	@media (max-width: 64rem) {
+		flex-direction: column;
+		align-items: center;
+	}
+	
+}
+h1{
+	font-size: 6rem;
+	text-align: center;
+	margin: 0;
+	line-height: 4.75rem;
+	color: $title-color;
+	font-weight: 400;
+	position: relative;
+	@media (max-width: 64rem) {
+		font-size: 4rem;
+		line-height: 3.5rem;
+	}
+}
+.text_block{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	padding: 1rem;
+	@media (max-width: 64rem) {
+		gap: 2rem;
+		margin-bottom: 2rem;
+	}
+	p{
+		font-family: 'Inter', sans-serif;
+		font-size: 1.625rem;
+		text-align: center;
+		line-height: 1;
+		color: $text-color;
+		font-weight: 600;
+		@media (max-width: 64rem) {
+		margin: 1rem 0;
+	}
+		
+	}
+
+}
+.main_img{
+	max-width: 28.5rem;
+	max-height: 34.625rem;
+	@media (max-width: 64rem) {
+		width: 100%;
+	}
+}
+.small_img{
+	width: 1.375rem;
+	position: absolute;
+	top: 55%;
+	right: -20px;
+	cursor: pointer;
+}
+.hidden_text{
+	display: flex;
+	flex-direction: column;
+	align-items: end;
+	position: absolute;
+	top: 30%;
+	background-color: #F2EED7;
+	width: 20rem;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	padding: 1.5rem 2rem;
+	animation: fadeIn 1s ease forwards;
+	@media (max-width: 64rem) {
+		top: 5rem;
+	}
+	p{
+		text-align: start;
+		font-size: 1.25rem;
+		margin: 15px 0;
+		font-family: $primary-font;
+		font-weight: 400;
+		line-height: 1.4;
+	}
+}
+.close_img{
+	width: 2rem;
+	cursor: pointer;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
